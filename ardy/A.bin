@@ -1,0 +1,573 @@
+È/d%@Ó                @?ò¥  2TÕ´            heads/idf-master-0-g6e47e18a    arduino-lib-builder             12:14:31        Jul 25 2021     v4.4-dev-2313-gc69f0ec32                                                                                                                        Sending ATI command to Cavli module ==================================  ATI         ÿŒ@4@@$@∏@¨@‰@ƒ@@Ä@ƒŒ@®@        ¯Œ@<@@"(Cannot use SET_PERI_REG_MASK for DPORT registers use DPORT_SET_PERI_REG_MASK)" && (!((((rtc_io_desc[rtc_io].reg)) >= 0x3ff00000) && ((rtc_io_desc[rtc_io].reg)) <= 0x3ff13FFC))   C:\Users\LE-151\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.0\cores\esp32\esp32-hal-gpio.c    __pinMode   *   uart_wait_tx_done(uart->num, portMAX_DELAY) C:\Users\LE-151\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.0\cores\esp32\esp32-hal-uart.c    uart_flush_input(uart->num) uart_driver_install(uart_nr, 2*queueLen, 0, 0, NULL, 0) uart_param_config(uart_nr, &uart_config)    uart_set_pin(uart_nr, txPin, rxPin, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE) uart_set_line_inverse(uart_nr, UART_SIGNAL_TXD_INV | UART_SIGNAL_RXD_INV)   ,  X  ∞  `	  ¿  Ä%   K   ñ   ·  Ä$  ¬  Ñ  Ë         @8 uartFlushTxOnly uartBegin   loopTask    uart    E (%u) %s: %s(%d): uart_num error
+  E (%u) %s: %s(%d): data bit error
+  E (%u) %s: %s(%d): stop bit error
+  E (%u) %s: %s(%d): rx flow thresh error
+    E (%u) %s: %s(%d): hw_flowctrl mode error
+  E (%u) %s: %s(%d): uart driver error
+   E (%u) %s: %s(%d): empty intr threshold error
+  E (%u) %s: %s(%d): tx_io_num error
+ E (%u) %s: %s(%d): rx_io_num error
+ E (%u) %s: %s(%d): rts_io_num error
+    E (%u) %s: %s(%d): cts_io_num error
+    "(Cannot use REG_SET_FIELD for DPORT registers use DPORT_REG_SET_FIELD)" && (!((((pin_name)) >= 0x3ff00000) && ((pin_name)) <= 0x3ff13FFC)) IDF/components/hal/esp32/include/hal/gpio_ll.h  E (%u) %s: %s(%d): param null
+  E (%u) %s: %s(%d): buffer null
+ E (%u) %s: %s(%d): uart size error
+ E (%u) %s: %s(%d): uart data null
+  E (%u) %s: %s(%d): break_num error
+ E (%u) %s: rx_buffered_len error
+   E (%u) %s: %s(%d): uart rx buffer length error
+ E (%u) %s: %s(%d): uart tx buffer length error
+ E (%u) %s: UART driver malloc error
+    E (%u) %s: UART driver already installed
+   ï  
+
+x uart_driver_delete  uart_driver_install uart_flush_input    uart_get_buffered_data_len  uart_read_bytes uart_write_bytes    uart_wait_tx_done   uart_intr_config    uart_param_config   gpio_ll_iomux_func_sel  uart_set_pin    uart_isr_register   uart_enable_tx_intr uart_pattern_queue_reset    uart_disable_intr_mask  uart_enable_intr_mask   uart_set_line_inverse   uart_get_baudrate   uart_set_baudrate   uart_get_parity uart_set_parity uart_get_stop_bits  uart_set_stop_bits  uart_get_word_length    uart_set_word_length    gpio    E (%u) %s: %s(%d): %s
+  GPIO number error   "(Cannot use SET_PERI_REG_MASK for DPORT registers use DPORT_SET_PERI_REG_MASK)" && (!((((GPIO_PIN_MUX_REG[gpio_num])) >= 0x3ff00000) && ((GPIO_PIN_MUX_REG[gpio_num])) <= 0x3ff13FFC)) "(Cannot use CLEAR_PERI_REG_MASK for DPORT registers use DPORT_CLEAR_PERI_REG_MASK)" && (!((((GPIO_PIN_MUX_REG[gpio_num])) >= 0x3ff00000) && ((GPIO_PIN_MUX_REG[gpio_num])) <= 0x3ff13FFC)) "(Cannot use REG_WRITE for DPORT registers use DPORT_REG_WRITE)" && (!(((((0x3ff44000 + 0x0530) + (gpio_num * 4))) >= 0x3ff00000) && (((0x3ff44000 + 0x0530) + (gpio_num * 4))) <= 0x3ff13FFC)) GPIO output gpio_num error  "(Cannot use REG_SET_BIT for DPORT registers use DPORT_REG_SET_BIT)" && (!((((GPIO_PIN_MUX_REG[gpio_num])) >= 0x3ff00000) && ((GPIO_PIN_MUX_REG[gpio_num])) <= 0x3ff13FFC)) "(Cannot use REG_CLR_BIT for DPORT registers use DPORT_REG_CLR_BIT)" && (!((((GPIO_PIN_MUX_REG[gpio_num])) >= 0x3ff00000) && ((GPIO_PIN_MUX_REG[gpio_num])) <= 0x3ff13FFC)) GPIO pull mode error    E (%u) %s: io_num=%d can only be input
+ gpio_ll_output_disable  gpio_output_disable gpio_output_enable  gpio_ll_input_disable   gpio_input_disable  gpio_ll_input_enable    gpio_input_enable   gpio_set_direction  gpio_set_pull_mode  gpio_set_level  gpio_ll_pulldown_dis    gpio_pulldown_dis   gpio_ll_pulldown_en gpio_pulldown_en    gpio_ll_pullup_dis  gpio_pullup_dis gpio_ll_pullup_en   gpio_pullup_en  periph < PERIPH_MODULE_MAX  IDF/components/driver/periph_ctrl.c periph_module_reset periph_module_disable   periph_module_enable    "(Cannot use SET_PERI_REG_MASK for DPORT registers use DPORT_SET_PERI_REG_MASK)" && (!((((rtc_io_desc[rtcio_num].reg)) >= 0x3ff00000) && ((rtc_io_desc[rtcio_num].reg)) <= 0x3ff13FFC)) IDF/components/hal/esp32/include/hal/rtc_io_ll.h    RTCIO   RTCIO number error  "(Cannot use CLEAR_PERI_REG_MASK for DPORT registers use DPORT_CLEAR_PERI_REG_MASK)" && (!((((rtc_io_desc[rtcio_num].reg)) >= 0x3ff00000) && ((rtc_io_desc[rtcio_num].reg)) <= 0x3ff13FFC)) rtcio_ll_pulldown_disable   rtc_gpio_pulldown_dis   rtcio_ll_pulldown_enable    rtc_gpio_pulldown_en    rtcio_ll_pullup_disable rtc_gpio_pullup_dis rtcio_ll_pullup_enable  rtc_gpio_pullup_en  partition   E (%u) %s: No MD5 found in partition table
+ E (%u) %s: Partition table MD5 mismatch
+    E (%u) %s: load_partitions returned 0x%x
+   it  IDF/components/spi_flash/partition.c    iterator != NULL    partition != NULL   esp_partition_mmap  esp_partition_erase_range   esp_partition_write_raw esp_partition_read_raw  esp_partition_write esp_partition_read  esp_partition_get   esp_partition_next  s_mmap_page_refcnt[i] == 0 || (entry_pro == SOC_MMU_PAGE_IN_FLASH(pages[pageno]) && entry_app == SOC_MMU_PAGE_IN_FLASH(pages[pageno]) ) IDF/components/spi_flash/flash_mmap.c   s_mmap_page_refcnt[i] > 0   0 && "invalid handle, or handle already unmapped"   spi_flash_munmap    spi_flash_mmap_pages    E (%u) %s: unexpected spi flash error code: 0x%x
+   E (%u) %s: failed to get chip size
+ E (%u) %s: flash encrypted write address must be 16 bytes aligned
+  E (%u) %s: flash encrypted write length must be multiple of 16
+ bus_acquired    IDF/components/spi_flash/esp_flash_api.c    esp_flash_write_encrypted   spi_flash   E (%u) %s: Detected size(%dk) smaller than the size in the binary image header(%dk). Probe failed.
+ spi_flash   chip_status == 0    IDF/components/spi_flash/spi_flash_os_func_app.c    spi1_flash_os_check_yield   s_flash_op_mutex != NULL    IDF/components/spi_flash/cache_utils.c  esp_ptr_in_dram((const void *)esp_cpu_get_sp()) s_flash_op_cpu == -1    other_cpuid == 1    esp_ipc_call(other_cpuid, &spi_flash_op_block_func, (void *) other_cpuid)   xPortGetCoreID() == cpuid   cpuid == s_flash_op_cpu !(xTaskGetSchedulerState() == taskSCHEDULER_NOT_STARTED && cpuid != 0)  spi_flash_enable_interrupts_caches_and_other_cpu    spi_flash_disable_interrupts_caches_and_other_cpu   spi_flash_init_lock nvs itemTypeOf(dst) == datatype IDF/components/nvs_flash/src/nvs_types.hpp  void nvs::Item::getValue(T&) [with T = unsigned char]           <œ@Ä`@Dœ@`e@†e@xe@¿e@êe@Pœ@\œ@        hœ@ f@false && "item should have been present in cache"   IDF/components/nvs_flash/src/nvs_item_hash_list.cpp void nvs::HashList::erase(size_t, bool) index == mFirstUsedEntry    IDF/components/nvs_flash/src/nvs_page.cpp   mState == PageState::UNINITIALIZED  index < ENTRY_COUNT entry < ENTRY_COUNT IDF/components/nvs_flash/src/nvs_page.hpp   end <= ENTRY_COUNT  end > begin index < Nitems  IDF/components/nvs_flash/src/compressed_enum_table.hpp  state == EntryState::WRITTEN || state == EntryState::EMPTY  readEntryIndex != mFirstUsedEntry   item.span > 0   esp_err_t nvs::Page::alterEntryRangeState(size_t, size_t, nvs::Page::EntryState)    void CompressedEnumTable<Tenum, Nbits, Nitems>::set(size_t, Tenum) [with Tenum = nvs::Page::EntryState; unsigned int Nbits = 2; unsigned int Nitems = 126; size_t = unsigned int]   esp_err_t nvs::Page::alterEntryState(size_t, nvs::Page::EntryState) esp_err_t nvs::Page::initialize()   esp_err_t nvs::Page::mLoadEntryTable()  esp_err_t nvs::Page::copyItems(nvs::Page&)  void nvs::Page::updateFirstUsedEntry(size_t, size_t)    Tenum CompressedEnumTable<Tenum, Nbits, Nitems>::get(size_t) const [with Tenum = nvs::Page::EntryState; unsigned int Nbits = 2; unsigned int Nitems = 126; size_t = unsigned int]   esp_err_t nvs::Page::eraseEntryAndSpan(size_t)  uint32_t nvs::Page::getEntryAddress(size_t) const   usedEntries == newPage->getUsedEntryCount() IDF/components/nvs_flash/src/nvs_pagemanager.cpp    mPageList.back().getSeqNumber(lastSeqNo)    esp_err_t nvs::PageManager::load(nvs::Partition*, uint32_t, uint32_t)   pthread E (%u) %s: Failed to allocate task args!
+   E (%u) %s: Failed to allocate pthread data!
+    E (%u) %s: Failed to create task!
+  false && "Failed to lock threads list!" IDF/components/pthread/pthread.c    E (%u) %s: %s: not supported!
+  false && "Failed to release mutex!" false && "Failed to unlock mutex!"  pthread_mutex_unlock    pthread_mutex_destroy   pthread_cancel  tls != NULL IDF/components/pthread/pthread_local_storage.c  pthread_local_storage_thread_deleted_callback   
+Stack smashing protect failure!
+
+   task_wdt    E (%u) %s: Task watchdog got triggered. The following tasks did not reset the watchdog in time:
+    E (%u) %s:  - %s (%s)
+  E (%u) %s: %s
+  E (%u) %s: CPU %d: %s
+  E (%u) %s: Aborting.
+   E (%u) %s: Print CPU %d (current core) backtrace
+   E (%u) %s: Print CPU %d backtrace
+  esp_intr_alloc(ETS_TG0_WDT_LEVEL_INTR_SOURCE, 0, task_wdt_isr, NULL, &twdt_config->intr_handle) IDF/components/esp_system/task_wdt.c    esp_register_freertos_idle_hook_for_cpu(idle_hook_cb, i)    esp_task_wdt_add    esp_task_wdt_init   cpu_start   E (%u) %s: Running on single core variant of a chip, but app is built with multi-core support.
+ E (%u) %s: Check that CONFIG_FREERTOS_UNICORE is enabled in menuconfig
+ rtc_clk_xtal_freq_get() != RTC_XTAL_FREQ_AUTO   IDF/components/esp_system/port/soc/esp32/clk.c  res esp_clk_init    (hint & (~RST_REASON_MASK)) == 0    IDF/components/esp_system/port/soc/esp32/reset_reason.c esp_reset_reason_set_hint   
+
+Backtrace:  :0x 0x%08X:0x%08X    |<-CORRUPTED    |<-CONTINUES   
+
+    core_id<portNUM_PROCESSORS  IDF/components/esp_system/crosscore_int.c   err esp_crosscore_int_send  esp_crosscore_int_init      ı?     ˆ?Guru Meditation Error: Core      panic'ed ( ).  Setting breakpoint at 0x     and returning...
+ 
+ELF file SHA256:  Rebooting...
+  /dev/uart/0 w   err == ESP_OK && "Failed to init pthread module!"   IDF/components/esp_system/startup.c flash_ret == ESP_OK do_core_init    \ê@0/@Unknown 
+Brownout detector was triggered
+
+            ı?     ˆ?Memory dump at 0x   :   Debug exception reason:     SingleStep  HwBreakpoint    Stack canary watchpoint triggered ( )   Watchpoint 0 triggered  BREAK instr     BREAKN instr    DebugIntr   Core     register dump:      was running in ISR context:
+  EPC1    : 0x      EPC2    : 0x    EPC3    : 0x    EPC4    : 0x  PC          PS          A0          A1          A2          A3          A4          A5          A6          A7          A8          A9          A10         A11         A12         A13         A14         A15         SAR         EXCCAUSE    EXCVADDR    LBEG        LEND        LCOUNT      `*@?l*@?x*@?Ñ*@?ê*@?ú*@?®*@?¥*@?¿*@?Ã*@?ÿ*@?‰*@?*@?¸*@?+@?+@? +@?,+@?8+@?D+@?P+@?\+@?h+@?t+@?Exception was unhandled.    Interrupt wdt timeout on CPU0   Interrupt wdt timeout on CPU1   Unknown reason  Unhandled debug exception   Double exception    Unhandled kernel exception  Coprocessor exception   Cache disabled but cached memory region accessed    IllegalInstruction  Syscall InstructionFetchError   LoadStoreError  Level1Interrupt Alloca  IntegerDivideByZero PCValue Privileged  LoadStoreAlignment  InstrPDAddrError    LoadStorePIFDataError   InstrPIFAddrError   LoadStorePIFAddrError   InstTLBMiss InstTLBMultiHit InstFetchPrivilege  InstrFetchProhibited    LoadStoreTLBMiss    LoadStoreTLBMultihit    LoadStorePrivilege  LoadProhibited  StoreProhibited Cp0Dis  Cp1Dis  Cp2Dis  Cp3Dis  Cp4Dis  Cp5Dis  Cp6Dis  Cp7Dis  <,@?L,@?h,@?|,@?ò,@?¸+@?,@?∞,@?‰,@?¯,@? -@?-@?(-@?8-@?@-@?T-@?\-@?h-@?`&@?`&@?|-@?ê-@?®-@?º-@?‘-@?‡-@?-@?`&@?.@?`&@?`&@?`&@?.@?0.@?H.@?`&@?\.@?l.@?`&@?`&@?|.@?Ñ.@?å.@?î.@?ú.@?§.@?¨.@?¥.@?   œÒ     «p     C0                   Ä/   strncmp(src_path, vfs->path_prefix, vfs->path_prefix_len) == 0  IDF/components/vfs/vfs.c     ˇˇ translate_path  fd >=0 && fd < 3    IDF/components/vfs/vfs_uart.c   s_ctx[fd]->peek_char == NONE    /0  /1  /2  fd >= 0 && fd < 3   /dev/uart   esp_vfs_register("/dev/uart", &vfs, NULL)   uart_write  uart_return_char    uart_read   uart_close  uart_fstat  uart_fcntl  uart_fsync  esp_vfs_dev_uart_register   T›˚?x›˚?ú›˚?i == 0 || s_log_cache[(i - 1) / 2].generation < s_log_cache[i].generation   IDF/components/log/log.c    get_cached_log_level    esp_log_level_set   esp_ptr_in_diram_dram((void *)dstart)   IDF/components/heap/heap_caps.c esp_ptr_in_diram_dram((void *)dend) (dstart & 3) == 0   (dend & 3) == 0 heap != NULL && "free() target pointer is outside heap areas"   old_size > 0    heap != NULL && "realloc() pointer is outside heap areas"   heap_caps_realloc   heap_caps_free  dram_alloc_to_iram_addr heap_caps_malloc    heap_size <= HEAP_SIZE_MAX  IDF/components/heap/heap_caps_init.c    heap_idx <= num_heaps   heap_idx == num_heaps   SLIST_EMPTY(&registered_heaps)  heaps_array != NULL heap_caps_init  register_heap   reserved[i].start <= reserved[i].end    IDF/components/heap/port/memory_layout_utils.c  reserved[i + 1].start > reserved[i].start   memory_layout   E (%u) %s: SOC_RESERVE_MEMORY_REGION region range 0x%08x - 0x%08x overlaps with 0x%08x - 0x%08x
+    s_prepare_reserved_regions  ,     Ä?  @         ‡˙?              ˚? Ä           Ä˚? Ä            ¸?              ¸?             @¸?             `¸?             Ä¸?             †¸?             ¿¸?             ‡¸?              ˝?              ˝?             @˝?             `˝?             Ä˝?             †˝?             ¿˝?             ‡˝?              ˛? @      ¿@ @˛? @      Ä@ Ä˛? Ä       @  ˇ? Ä      Ä
+@ Äˇ? @      @
+@ ¿ˇ? @       
+@  @ Ä          Ä@ Ä           @             @            @@            `@            Ä@            †@            ¿@            ‡@             	@             	@            @	@            `	@            Ä	@            †	@            ¿	@            ‡	@           D/IRAM  PID2IRAM    PID3IRAM    PID4IRAM    PID5IRAM    PID6IRAM    PID7IRAM    PID2DRAM    PID3DRAM    PID4DRAM    PID5DRAM    PID6DRAM    PID7DRAM    SPIRAM  RTCRAM  D8@?  
+          7@?           ¸7@?              ¯7@?             8@?              8@?@             8@?Ä             (8@? 	             48@? 
+             @8@?           L8@?            X8@?@           d8@?Ä           p8@? 	           |8@? 
+           à8@?              ê8@?            DêÙ?àêÙ?@êÙ?ÑêÙ?HêÙ?lêÙ?`êÙ?dêÙ?hêÙ?TêÙ?XêÙ?\êÙ?4êÙ?8êÙ?0êÙ?<êÙ?LêÙ?PêÙ?pêÙ?têÙ?    |êÙ?ÄêÙ?åêÙ?    $êÙ?(êÙ?,êÙ?                êÙ? êÙ?êÙ?êÙ?êÙ?êÙ?êÙ?êÙ?|ÑÙ?                               Ä           $   |ÑÙ?       @              Ä         @            %   |ÑÙ?                               @           &   |ÑÙ?                 @              Ä           '   ÄÑÙ?         Ä                      Ä           "   ÄÑÙ?                              @           #   ÑÑÙ?                @                          àÑÙ?                @                          åÑÙ?                @                       !   åÑÙ?   	         @   Ä    Ä                       îÑÙ?                    Ä         Ä            òÑÙ?                    Ä         Ä             úÑÙ?                    Ä         Ä            †ÑÙ?                    Ä         Ä            §ÑÙ?                    Ä         Ä            ®ÑÙ?                    Ä         Ä             ¨ÑÙ?                    Ä         Ä @           ∞ÑÙ?                    Ä         Ä Ä              ˇˇˇˇ   ˇˇˇˇ
+   ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ            ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ         ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ	                         "      #      ∆∆««$      result == core_id || result == SPINLOCK_FREE    IDF/components/esp_hw_support/include/soc/spinlock.h    (result == SPINLOCK_FREE) == (lock->count == 0) lock->count < 0xFF  core_id == lock->owner  lock->count < 0x100 spinlock_release    spinlock_acquire                    !((vd->flags&VECDESC_FL_SHARED)&&(vd->flags&VECDESC_FL_NONSHARED))  IDF/components/esp_hw_support/intr_alloc.c  svd != NULL svd esp_intr_disable    esp_intr_free   is_vect_desc_usable find_desc_for_source    slowclk_cycles < 32767  IDF/components/esp_hw_support/port/esp32/rtc_time.c rtc_time    E (%u) %s: slowclk_cycles value too large, possible overflow
+   rtc_clk_cal_internal    uxTaskGetStackHighWaterMark(NULL) > 128 IDF/components/esp_hw_support/port/esp32/dport_access.c dport   res == pdTRUE   dport_access_init_core  esp_dport_access_int_init   esp_dport_access_stall_other_cpu_end             Unhandled interrupt %d on cpu %d!
+  ERROR   ESP_FAIL    ESP_OK  ESP_ERR_NO_MEM  ESP_ERR_INVALID_ARG ESP_ERR_INVALID_STATE   ESP_ERR_INVALID_SIZE    ESP_ERR_NOT_FOUND   ESP_ERR_NOT_SUPPORTED   ESP_ERR_TIMEOUT ESP_ERR_INVALID_RESPONSE    ESP_ERR_INVALID_CRC ESP_ERR_INVALID_VERSION ESP_ERR_INVALID_MAC ESP_ERR_NOT_FINISHED    ESP_ERR_NVS_BASE    ESP_ERR_NVS_NOT_INITIALIZED ESP_ERR_NVS_NOT_FOUND   ESP_ERR_NVS_TYPE_MISMATCH   ESP_ERR_NVS_READ_ONLY   ESP_ERR_NVS_NOT_ENOUGH_SPACE    ESP_ERR_NVS_INVALID_NAME    ESP_ERR_NVS_INVALID_HANDLE  ESP_ERR_NVS_REMOVE_FAILED   ESP_ERR_NVS_KEY_TOO_LONG    ESP_ERR_NVS_PAGE_FULL   ESP_ERR_NVS_INVALID_STATE   ESP_ERR_NVS_INVALID_LENGTH  ESP_ERR_NVS_NO_FREE_PAGES   ESP_ERR_NVS_VALUE_TOO_LONG  ESP_ERR_NVS_PART_NOT_FOUND  ESP_ERR_NVS_NEW_VERSION_FOUND   ESP_ERR_NVS_XTS_ENCR_FAILED ESP_ERR_NVS_XTS_DECR_FAILED ESP_ERR_NVS_XTS_CFG_FAILED  ESP_ERR_NVS_XTS_CFG_NOT_FOUND   ESP_ERR_NVS_ENCR_NOT_SUPPORTED  ESP_ERR_NVS_KEYS_NOT_INITIALIZED    ESP_ERR_NVS_CORRUPT_KEY_PART    ESP_ERR_NVS_CONTENT_DIFFERS ESP_ERR_NVS_WRONG_ENCRYPTION    ESP_ERR_ULP_BASE    ESP_ERR_ULP_SIZE_TOO_BIG    ESP_ERR_ULP_INVALID_LOAD_ADDR   ESP_ERR_ULP_DUPLICATE_LABEL ESP_ERR_ULP_UNDEFINED_LABEL ESP_ERR_ULP_BRANCH_OUT_OF_RANGE ESP_ERR_OTA_BASE    ESP_ERR_OTA_PARTITION_CONFLICT  ESP_ERR_OTA_SELECT_INFO_INVALID ESP_ERR_OTA_VALIDATE_FAILED ESP_ERR_OTA_SMALL_SEC_VER   ESP_ERR_OTA_ROLLBACK_FAILED ESP_ERR_OTA_ROLLBACK_INVALID_STATE  ESP_ERR_EFUSE   ESP_OK_EFUSE_CNT    ESP_ERR_EFUSE_CNT_IS_FULL   ESP_ERR_EFUSE_REPEATED_PROG ESP_ERR_CODING  ESP_ERR_NOT_ENOUGH_UNUSED_KEY_BLOCKS    ESP_ERR_DAMAGED_READING ESP_ERR_IMAGE_BASE  ESP_ERR_IMAGE_FLASH_FAIL    ESP_ERR_IMAGE_INVALID   ESP_ERR_WIFI_BASE   ESP_ERR_WIFI_NOT_INIT   ESP_ERR_WIFI_NOT_STARTED    ESP_ERR_WIFI_NOT_STOPPED    ESP_ERR_WIFI_IF ESP_ERR_WIFI_MODE   ESP_ERR_WIFI_STATE  ESP_ERR_WIFI_CONN   ESP_ERR_WIFI_NVS    ESP_ERR_WIFI_MAC    ESP_ERR_WIFI_SSID   ESP_ERR_WIFI_PASSWORD   ESP_ERR_WIFI_TIMEOUT    ESP_ERR_WIFI_WAKE_FAIL  ESP_ERR_WIFI_WOULD_BLOCK    ESP_ERR_WIFI_NOT_CONNECT    ESP_ERR_WIFI_POST   ESP_ERR_WIFI_INIT_STATE ESP_ERR_WIFI_STOP_STATE ESP_ERR_WIFI_NOT_ASSOC  ESP_ERR_WIFI_TX_DISALLOW    ESP_ERR_WIFI_REGISTRAR  ESP_ERR_WIFI_WPS_TYPE   ESP_ERR_WIFI_WPS_SM ESP_ERR_ESPNOW_BASE ESP_ERR_ESPNOW_NOT_INIT ESP_ERR_ESPNOW_ARG  ESP_ERR_ESPNOW_NO_MEM   ESP_ERR_ESPNOW_FULL ESP_ERR_ESPNOW_NOT_FOUND    ESP_ERR_ESPNOW_INTERNAL ESP_ERR_ESPNOW_EXIST    ESP_ERR_ESPNOW_IF   ESP_ERR_DPP_FAILURE ESP_ERR_DPP_TX_FAILURE  ESP_ERR_DPP_INVALID_ATTR    ESP_ERR_MESH_BASE   ESP_ERR_MESH_WIFI_NOT_START ESP_ERR_MESH_NOT_INIT   ESP_ERR_MESH_NOT_CONFIG ESP_ERR_MESH_NOT_START  ESP_ERR_MESH_NOT_SUPPORT    ESP_ERR_MESH_NOT_ALLOWED    ESP_ERR_MESH_NO_MEMORY  ESP_ERR_MESH_ARGUMENT   ESP_ERR_MESH_EXCEED_MTU ESP_ERR_MESH_TIMEOUT    ESP_ERR_MESH_DISCONNECTED   ESP_ERR_MESH_QUEUE_FAIL ESP_ERR_MESH_QUEUE_FULL ESP_ERR_MESH_NO_PARENT_FOUND    ESP_ERR_MESH_NO_ROUTE_FOUND ESP_ERR_MESH_OPTION_NULL    ESP_ERR_MESH_OPTION_UNKNOWN ESP_ERR_MESH_XON_NO_WINDOW  ESP_ERR_MESH_INTERFACE  ESP_ERR_MESH_DISCARD_DUPLICATE  ESP_ERR_MESH_DISCARD    ESP_ERR_MESH_VOTING ESP_ERR_MESH_XMIT   ESP_ERR_MESH_QUEUE_READ ESP_ERR_MESH_PS ESP_ERR_MESH_RECV_RELEASE   ESP_ERR_ESP_NETIF_BASE  ESP_ERR_ESP_NETIF_INVALID_PARAMS    ESP_ERR_ESP_NETIF_IF_NOT_READY  ESP_ERR_ESP_NETIF_DHCPC_START_FAILED    ESP_ERR_ESP_NETIF_DHCP_ALREADY_STARTED  ESP_ERR_ESP_NETIF_DHCP_ALREADY_STOPPED  ESP_ERR_ESP_NETIF_NO_MEM    ESP_ERR_ESP_NETIF_DHCP_NOT_STOPPED  ESP_ERR_ESP_NETIF_DRIVER_ATTACH_FAILED  ESP_ERR_ESP_NETIF_INIT_FAILED   ESP_ERR_ESP_NETIF_DNS_NOT_CONFIGURED    ESP_ERR_ESP_NETIF_MLD6_FAILED   ESP_ERR_ESP_NETIF_IP6_ADDR_FAILED   ESP_ERR_FLASH_BASE  ESP_ERR_FLASH_OP_FAIL   ESP_ERR_FLASH_OP_TIMEOUT    ESP_ERR_FLASH_NOT_INITIALISED   ESP_ERR_FLASH_UNSUPPORTED_HOST  ESP_ERR_FLASH_UNSUPPORTED_CHIP  ESP_ERR_FLASH_PROTECTED ESP_ERR_HTTP_BASE   ESP_ERR_HTTP_MAX_REDIRECT   ESP_ERR_HTTP_CONNECT    ESP_ERR_HTTP_WRITE_DATA ESP_ERR_HTTP_FETCH_HEADER   ESP_ERR_HTTP_INVALID_TRANSPORT  ESP_ERR_HTTP_CONNECTING ESP_ERR_HTTP_EAGAIN ESP_ERR_HTTP_CONNECTION_CLOSED  ESP_ERR_ESP_TLS_BASE    ESP_ERR_ESP_TLS_CANNOT_RESOLVE_HOSTNAME ESP_ERR_ESP_TLS_CANNOT_CREATE_SOCKET    ESP_ERR_ESP_TLS_UNSUPPORTED_PROTOCOL_FAMILY ESP_ERR_ESP_TLS_FAILED_CONNECT_TO_HOST  ESP_ERR_ESP_TLS_SOCKET_SETOPT_FAILED    ESP_ERR_MBEDTLS_CERT_PARTLY_OK  ESP_ERR_MBEDTLS_CTR_DRBG_SEED_FAILED    ESP_ERR_MBEDTLS_SSL_SET_HOSTNAME_FAILED ESP_ERR_MBEDTLS_SSL_CONFIG_DEFAULTS_FAILED  ESP_ERR_MBEDTLS_SSL_CONF_ALPN_PROTOCOLS_FAILED  ESP_ERR_MBEDTLS_X509_CRT_PARSE_FAILED   ESP_ERR_MBEDTLS_SSL_CONF_OWN_CERT_FAILED    ESP_ERR_MBEDTLS_SSL_SETUP_FAILED    ESP_ERR_MBEDTLS_SSL_WRITE_FAILED    ESP_ERR_MBEDTLS_PK_PARSE_KEY_FAILED ESP_ERR_MBEDTLS_SSL_HANDSHAKE_FAILED    ESP_ERR_MBEDTLS_SSL_CONF_PSK_FAILED ESP_ERR_ESP_TLS_CONNECTION_TIMEOUT  ESP_ERR_WOLFSSL_SSL_SET_HOSTNAME_FAILED ESP_ERR_WOLFSSL_SSL_CONF_ALPN_PROTOCOLS_FAILED  ESP_ERR_WOLFSSL_CERT_VERIFY_SETUP_FAILED    ESP_ERR_WOLFSSL_KEY_VERIFY_SETUP_FAILED ESP_ERR_WOLFSSL_SSL_HANDSHAKE_FAILED    ESP_ERR_WOLFSSL_CTX_SETUP_FAILED    ESP_ERR_WOLFSSL_SSL_SETUP_FAILED    ESP_ERR_WOLFSSL_SSL_WRITE_FAILED    ESP_ERR_ESP_TLS_SE_FAILED   ESP_ERR_ESP_TLS_TCP_CLOSED_FIN  ESP_ERR_HTTPS_OTA_BASE  ESP_ERR_HTTPS_OTA_IN_PROGRESS   ESP_ERR_PING_BASE   ESP_ERR_PING_INVALID_PARAMS ESP_ERR_PING_NO_MEM ESP_ERR_HTTPD_BASE  ESP_ERR_HTTPD_HANDLERS_FULL ESP_ERR_HTTPD_HANDLER_EXISTS    ESP_ERR_HTTPD_INVALID_REQ   ESP_ERR_HTTPD_RESULT_TRUNC  ESP_ERR_HTTPD_RESP_HDR  ESP_ERR_HTTPD_RESP_SEND ESP_ERR_HTTPD_ALLOC_MEM ESP_ERR_HTTPD_TASK  ESP_ERR_HW_CRYPTO_BASE  ESP_ERR_HW_CRYPTO_DS_HMAC_FAIL  ESP_ERR_HW_CRYPTO_DS_INVALID_KEY    ESP_ERR_HW_CRYPTO_DS_INVALID_DIGEST ESP_ERR_HW_CRYPTO_DS_INVALID_PADDING    ˇˇˇˇ‡B@?    ÏB@?  ÙB@?  C@?  C@?  0C@?  HC@?  \C@?  tC@?  ÑC@?	  †C@?
+  ¥C@?  ÃC@?  ‡C@?   ¯C@?  D@?  (D@?  @D@?  \D@?  tD@?  îD@?  ∞D@?  ÃD@?	  ËD@?
+  E@?  E@?  8E@?  TE@?  pE@?  åE@?  ®E@?  »E@?  ‰E@?   F@?  F@?  <F@?  \F@?  ÄF@?  †F@?  ºF@?   ‹F@?  F@?  G@?  ,G@?  HG@?  dG@?   ÑG@?  òG@?  ∏G@?  ÿG@?  ÙG@?  H@?  ,H@?   PH@?  `H@?  tH@?  êH@?  ¨H@?  ºH@?  ‰H@?    ¸H@?   I@?   ,I@? 0  DI@?0  XI@?0  pI@?0  åI@?0  ®I@?0  ∏I@?0  ÃI@?0  ‡I@?0  ÙI@?	0  J@?
+0  J@?0  0J@?0  HJ@?0  `J@?0  xJ@?0  îJ@?0  ∞J@?0  ƒJ@?0  ‹J@?0  ÙJ@?0  K@?30  (K@?40  @K@?50  XK@?d0  lK@?e0  ÄK@?f0  òK@?g0  ¨K@?h0  ƒK@?i0  ÿK@?j0  ÙK@?k0  L@?l0  $L@?ó0  8L@?ò0  LL@?ô0  dL@? @  ÄL@?@  îL@?@  ∞L@?@  »L@?@  ‡L@?@  ¯L@?@  M@?@  0M@?@  HM@?	@  `M@?
+@  xM@?@  êM@?@  ¨M@?@  ƒM@?@  ‹M@?@  ¸M@?@  N@?@  4N@?@  PN@?@  lN@?@  ÑN@?@  §N@?@  ºN@?@  –N@?@  ‰N@?@  ¸N@?@  O@? P  (O@?P  @O@?P  dO@?P  ÑO@?P  ¨O@?P  ‘O@?P  ¸O@?P  P@?P  <P@?	P  dP@?
+P  ÑP@?P  ¨P@?P  ÃP@? `  P@?`  Q@?`  Q@?`  8Q@?`  XQ@?`  xQ@?`  òQ@? p  ∞Q@?p  ƒQ@?p  ‡Q@?p  ¯Q@?p  R@?p  ,R@?p  LR@?p  dR@?p  xR@? Ä  òR@?Ä  ∞R@?Ä  ÿR@?Ä   S@?Ä  ,S@?Ä  TS@?Ä  |S@?Ä  úS@?Ä  ƒS@?	Ä  ÏS@?
+Ä  T@?Ä  HT@?Ä  pT@?Ä  úT@?Ä  ¿T@?Ä  ‰T@?Ä  U@?Ä  0U@?Ä  TU@?Ä  xU@?Ä  †U@?Ä  –U@?Ä  ¸U@?Ä  $V@?Ä  LV@?Ä  pV@?Ä  îV@?Ä  ∏V@?Ä  ‘V@? ê  ÙV@?ê  W@? †  ,W@?†  @W@?†  \W@? ∞  pW@?∞  ÑW@?∞  †W@?∞  ¿W@?∞  ‹W@?∞  ¯W@?∞  X@?∞  (X@?∞  @X@? ¿  TX@?¿  lX@?¿  åX@?¿  ∞X@?¿  ‘X@?esp_timer   ETSTimer    esp_timer_create(&create_args, (esp_timer_handle_t*)&(ptimer->timer_arg))   IDF/components/esp_timer/src/ets_timer_legacy.c timer_initialized(ptimer)   esp_timer_start_once(ESP_TIMER(ptimer), time_us)    esp_timer_start_periodic(ESP_TIMER(ptimer), time_us)    ets_timer_arm_us    ets_timer_setfn apb_ticks_per_us >= 3 && "divider value too low"    IDF/components/esp_timer/src/esp_timer_impl_lac.c   apb_ticks_per_us % TICKS_PER_US == 0 && "APB frequency (in MHz) should be divisible by TICK_PER_US" esp_timer_impl  E (%u) %s: esp_intr_alloc failed (0x%0x)
+   esp_intr_enable(s_timer_interrupt_handle)   esp_timer_impl_init esp_timer_impl_update_apb_freq  ( uint32_t ) p >= frame->a1 IDF/components/freertos/port/xtensa/port.c  lock    ***ERROR*** A stack overflow in task     has been detected. spinlock_release    spinlock_acquire    pxPortInitialiseStack               H   H   H   H   H   H   H      E (%u) %s: Could not reserve internal/DMA pool (error 0x%x)
+    esp_task_wdt_init(CONFIG_ESP_TASK_WDT_TIMEOUT_S, true)  IDF/components/freertos/port/port_common.c  esp_task_wdt_add(idle_0)    main    main_task   esp_startup_start_app_common    pxQueueSetContainer IDF/components/freertos/queue.c pxQueueSetContainer->uxMessagesWaiting < pxQueueSetContainer->uxLength  pxQueue uxQueueLength > ( UBaseType_t ) 0   pxStaticQueue != ((void *)0)    !( ( pucQueueStorage != ((void *)0) ) && ( uxItemSize == 0 ) )  !( ( pucQueueStorage == ((void *)0) ) && ( uxItemSize != 0 ) )  xSize == sizeof( Queue_t )  ( uxItemSize == 0 ) || ( uxQueueLength == ( xQueueSizeInBytes / uxItemSize ) )  ( sizeof( Queue_t ) + xQueueSizeInBytes ) > xQueueSizeInBytes   uxMaxCount != 0 uxInitialCount <= uxMaxCount    !( ( pvItemToQueue == ((void *)0) ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) )  !( ( xCopyPosition == ( ( BaseType_t ) 2 ) ) && ( pxQueue->uxLength != 1 ) )    !( ( xTaskGetSchedulerState() == ( ( BaseType_t ) 0 ) ) && ( xTicksToWait != 0 ) )  pxQueue->pcHead != ((void *)0) || pxQueue->u.xSemaphore.xMutexHolder == ((void *)0) || pxQueue->u.xSemaphore.xMutexHolder == xTaskGetCurrentTaskHandle()    pxMutex pxQueue->uxItemSize == 0    !( ( pxQueue->pcHead == ((void *)0) ) && ( pxQueue->u.xSemaphore.xMutexHolder != ((void *)0) ) )    ( pxQueue ) !( ( ( pvBuffer ) == ((void *)0) ) && ( ( pxQueue )->uxItemSize != ( UBaseType_t ) 0U ) )   xInheritanceOccurred == ( ( BaseType_t ) 0 )    !( ( pvBuffer == ((void *)0) ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) )   vQueueDelete    xQueueReceiveFromISR    xQueueSemaphoreTake xQueueGiveFromISR   xQueueGenericSendFromISR    prvNotifyQueueSetContainer  xQueueGenericSend   xQueueCreateCountingSemaphore   xQueueTakeMutexRecursive    xQueueGiveMutexRecursive    xQueueGenericCreate xQueueGenericCreateStatic   xQueueGenericReset  pxTCB   IDF/components/freertos/tasks.c pxTCB->ucStaticallyAllocated == ( ( uint8_t ) 2 )   xTaskGetSchedulerState() != ( ( BaseType_t ) 0 )    pxPreviousWakeTime  ( xTimeIncrement > 0U ) uxSchedulerSuspended[xPortGetCoreID()] == 0 ( uxNewPriority < ( 25 ) )  cpuid < 2   ( xIdleTaskHandle[cpuid] != ((void *)0) )   ( ( ( ( pxDelayedTaskList )->uxNumberOfItems == ( UBaseType_t ) 0 ) ? ( ( BaseType_t ) 1 ) : ( ( BaseType_t ) 0 ) ) )   uxSchedulerSuspended[xPortGetCoreID()]  xNextTaskUnblockTime >= xTickCount  pxEventList pxUnblockedTCB  pxTimeOut   pxTicksToWait   pxTCB == pxCurrentTCB[xPortGetCoreID()] pxTCB->uxMutexesHeld    pxTCB != pxCurrentTCB[xPortGetCoreID()] xTaskToNotify   pxTCB->ulNotifiedValue == ~0UL  ( ( &( pxTCB->xEventListItem ) )->pvContainer ) == ((void *)0)  IDLE    xReturn != ( -1 )   vTaskNotifyGiveFromISR  vTaskPriorityDisinheritAfterTimeout xTaskPriorityDisinherit xTaskCheckForTimeOut    xTaskRemoveFromEventList    vTaskPlaceOnEventList   spinlock_release    spinlock_acquire    ••••••••••••••••••••xTaskIncrementTick  xTaskGetIdleTaskHandleForCPU    pcTaskGetName   xTaskResumeAll  vTaskStartScheduler vTaskPrioritySet    vTaskDelay  prvDeleteTCB    prvDeleteTLS    vTaskDelete h != ((void *)0)    IDF/components/newlib/locks.c   lock != NULL && "Uninitialized lock used"   h   xQueueGetMutexHolder( ( h ) ) == ((void *)0)    handle == (SemaphoreHandle_t) &s_common_mutex   handle == (SemaphoreHandle_t) &s_common_recursive_mutex esp_newlib_locks_init   check_lock_nonzero  lock_release_generic    lock_acquire_generic    _lock_close try_heap_caps_add_region(mem_start, mem_end)    IDF/components/bt/controller/esp32/bt.c esp_bt_controller_mem_release   (pxRingbuffer->xItemsWaiting > 0) && ((pxRingbuffer->pucRead != pxRingbuffer->pucWrite) || (pxRingbuffer->uxRingbufferFlags & ( ( UBaseType_t ) 4 )))   IDF/components/esp_ringbuf/ringbuf.c    pxRingbuffer->pucRead >= pxRingbuffer->pucHead && pxRingbuffer->pucRead < pxRingbuffer->pucTail pxRingbuffer->pucRead == pxRingbuffer->pucFree  ( ( ( UBaseType_t ) ( pucItem ) & (0x03) ) == 0 )   pucItem >= pxRingbuffer->pucHead    pucItem <= pxRingbuffer->pucTail    pxCurHeader->xItemLen <= pxRingbuffer->xMaxItemSize (pxCurHeader->uxItemFlags & ( ( UBaseType_t ) 2 )) == 0 (pxCurHeader->uxItemFlags & ( ( UBaseType_t ) 1 )) == 0 pxRingbuffer->pucFree <= pxRingbuffer->pucHead + pxRingbuffer->xSize    pxIsSplit != ((void *)0)    ( ( ( UBaseType_t ) ( pxRingbuffer->pucRead ) & (0x03) ) == 0 ) (pxHeader->xItemLen <= pxRingbuffer->xMaxItemSize) || (pxHeader->uxItemFlags & ( ( UBaseType_t ) 2 ))   pxHeader->xItemLen <= pxRingbuffer->xMaxItemSize    pcReturn >= pxRingbuffer->pucHead && pcReturn <= pxRingbuffer->pucTail  pcReturn >= pxRingbuffer->pucHead && pcReturn < pxRingbuffer->pucTail   ( ( ( UBaseType_t ) ( pxRingbuffer->pucAcquire ) & (0x03) ) == 0 )  pxRingbuffer->pucAcquire >= pxRingbuffer->pucHead && pxRingbuffer->pucAcquire < pxRingbuffer->pucTail   xRemLen >= sizeof(ItemHeader_t) (pxCurHeader->uxItemFlags & ( ( UBaseType_t ) 8 )) == 0 pxRingbuffer->pucWrite <= pxRingbuffer->pucHead + pxRingbuffer->xSize   *pvItem2 < *pvItem1 xIsSplit == ( ( BaseType_t ) 0 )    (uint8_t *)pucItem >= pxRingbuffer->pucHead (uint8_t *)pucItem < pxRingbuffer->pucTail  xReturn <= pxRingbuffer->xSize  xBufferSize > 0 xBufferType < RINGBUF_TYPE_MAX  pxRingbuffer    ppvItem != ((void *)0) || xItemSize == 0    (pxRingbuffer->uxRingbufferFlags & (( ( UBaseType_t ) 2 ) | ( ( UBaseType_t ) 1 ))) == 0    pvItem != ((void *)0)   pvItem != ((void *)0) || xItemSize == 0 xRingbufferGetMaxItemSize   vRingbufferDelete   vRingbufferReturnItemFromISR    vRingbufferReturnItem   prvReceiveGenericFromISR    xRingbufferReceiveFromISR   prvReceiveGeneric   xRingbufferReceive  xRingbufferSendFromISR  xRingbufferSend prvGetFreeSize  prvCheckItemFitsDefault prvSendItemDoneNoSplit  prvAcquireItemNoSplit   prvGetItemDefault   prvReturnItemDefault    prvCopyItemAllowSplit   prvCheckItemFitsByteBuffer  prvCopyItemByteBuf  prvGetItemByteBuf   prvReturnItemByteBuf    xRingbufferCreate    ¥  o  i  b  †ı?†ı?8†ı?T†ı?X†ı?t†ı?x†ı?î†ı?blk >= 0 && blk < EFUSE_BLK_MAX IDF/components/efuse/src/esp_efuse_utility.c    num_reg <= (range_read_addr_blocks[blk].end - range_read_addr_blocks[blk].start) / sizeof(uint32_t) "(Cannot use REG_READ for DPORT registers use DPORT_REG_READ)" && (!((((addr_wr_reg)) >= 0x3ff00000) && ((addr_wr_reg)) <= 0x3ff13FFC)) efuse   E (%u) %s: Range of data does not match the coding scheme
+  bits_counter <= req_size    "(Cannot use REG_READ for DPORT registers use DPORT_REG_READ)" && (!((((range_read_addr_blocks[blk].start + num_reg * 4)) >= 0x3ff00000) && ((range_read_addr_blocks[blk].start + num_reg * 4)) <= 0x3ff13FFC)) esp_efuse_utility_read_reg  esp_efuse_utility_process   cpuid == xPortGetCoreID()   IDF/components/esp_ipc/ipc.c    ipc%d   ipc_task    esp_ipc_init        ota_app_count < 16 && "must erase the partition before writing to it"   IDF/components/app_update/esp_ota_ops.c phys_offs != SPI_FLASH_CACHE2PHYS_FAIL  it != NULL  esp_ota_get_running_partition                                                                                                                                                                                                                                                                                                                                                                                                                                                       wifi    mesh    smartconfig ESPNOW Invalid coexist adapter function md5, internal: %s, idf: %s
+ coexist adapter function is NULL coexist adapter function version error! Version %x is expected, but it is %x
+ coexist adapter function magic error! Magic %x is expected, but it is %x
+ 9da3695 4c9ede1    ⁄@ŒŸ@ÍŸ@⁄@0⁄@S⁄@S⁄@S⁄@S⁄@€Ÿ@˘Ÿ@⁄@0⁄@ St9exception   Ç@?•Å@?St9bad_alloc    ‡Å@?ºÅ@?¥Å@?        Ñ·@ò·@¸“@¸“@T‰@”@å‚@ ‚@‘·@        ¨„@¿„@¸“@¸“@T‰@”@4‰@¸„@8”@NÂ@Â@+Â@NÂ@qÂ@îÂ@îÂ@îÂ@îÂ@Â@:Â@NÂ@qÂ@&Ô@ÌÓ@Ô@&Ô@IÔ@lÔ@lÔ@lÔ@lÔ@˜Ó@Ô@&Ô@IÔ@        , function:  assertion "%s" failed: file "%s", line %d%s%s
+ "@P@U@∞@Ò@Ô@ò@º@y@Â@X@A@y@y@y@Â@Â@Â@Â@Â@Â@Â@A@Â@Â@Â@n@Â@A@Â@Â@À@Â@Â@Â@Â@Â@Â@Â@Â@y@Â@‹@À@y@y@y@Â@À@Â@Â@Â@Â@n@À@n@Â@Â@n@Â@À@Â@Â@À@@>@Ë@@^@~@Ù@õ@Ù@«@«@Ù@;@Ë(@Ë(@I@Ë(@Ë(@Ë(@	@Ë(@Ë(@N@P	@Ë(@K	@[	@Ë(@é
+@î
+@î
+@î
+@î
+@î
+@î
+@î
+@î
+@î
+@Ë(@Ë(@Ë(@Ë(@Ë(@Ë(@Ë(@ë@Ë(@(@@ë@ë@ë@Ë(@Ë(@Ë(@Ë(@‘
+@Ë(@Ë(@ê@Ë(@Ë(@Ë(@‰@Ë(@˝@Ë(@Ë(@Y#@Ë(@Ë(@Ë(@Ë(@Ë(@Ë(@Ë(@Ë(@ë@Ë(@(@@ë@ë@ë@Ÿ
+@@@Ë(@ı
+@Ë(@ﬁ@õ@¸@@Ë(@‰@“@ @Ë(@Ë(@b#@Ë(@“@0000000000000000                INF inf NAN nan 0123456789abcdef 0123456789ABCDEF 0 ¶8@‘5@Ÿ5@46@u8@s8@8@@8@˝9@i6@‹9@≈9@˝9@˝9@˝9@i6@i6@i6@i6@i6@i6@i6@≈9@i6@i6@i6@Ú9@i6@≈9@i6@i6@O6@i6@i6@i6@i6@i6@i6@i6@i6@˝9@i6@`6@O6@˝9@˝9@˝9@i6@O6@i6@i6@i6@i6@Ú9@O6@Ú9@i6@i6@Ú9@i6@O6@i6@i6@O6@ã6@¬6@l7@¢7@‚7@7@x9@9@x9@K9@K9@x9@ì<@HV@HV@§<@HV@HV@HV@a<@HV@HV@©<@∞=@HV@´=@æ=@HV@Ò>@˜>@˜>@˜>@˜>@˜>@˜>@˜>@˜>@˜>@HV@HV@HV@HV@HV@HV@HV@HV@HV@~?@K@@HV@HV@HV@HV@HV@HV@HV@HV@HV@HV@ªG@HV@HV@HV@HL@HV@<M@HV@HV@ﬁP@HV@HV@HV@HV@HV@HV@HV@HV@HV@HV@~?@V@@HV@HV@HV@2?@V@@p?@HV@N?@HV@D@∆G@lK@p?@HV@HL@&<@GM@HV@HV@X<@HV@&<@0000000000000000                “^@ \@\@`\@°^@ü^@H^@l^@)`@ï\@`@Ò_@)`@)`@)`@ï\@ï\@ï\@ï\@ï\@ï\@ï\@Ò_@ï\@ï\@ï\@`@ï\@Ò_@ï\@ï\@{\@ï\@ï\@ï\@ï\@ï\@ï\@ï\@ï\@)`@ï\@å\@{\@)`@)`@)`@ï\@{\@ï\@ï\@ï\@ï\@`@{\@`@ï\@ï\@`@ï\@{\@ï\@ï\@{\@∑\@Ó\@ò]@Œ]@^@.]@§_@K_@§_@w_@w_@§_@≥b@hÉ@hÉ@¡b@hÉ@hÉ@hÉ@Åb@hÉ@hÉ@∆b@»c@hÉ@√c@”c@hÉ@e@e@e@e@e@e@e@e@e@e@hÉ@hÉ@hÉ@hÉ@hÉ@hÉ@hÉ@j@hÉ@¢e@Üf@j@j@j@hÉ@hÉ@hÉ@hÉ@Le@hÉ@hÉ@u@hÉ@hÉ@hÉ@by@hÉ@}z@hÉ@hÉ@Ÿ}@hÉ@hÉ@hÉ@hÉ@hÉ@hÉ@hÉ@hÉ@j@hÉ@¢e@ëf@@4           ,                    D   j@S           \   pj@Æ      P    t    k@o      0    å   êk@k           §   ¸k@ÿ      @    º                    ‘               Ä   Ï               0      ‘l@4             m@Ü     `    4  ên@˙      P    L  åo@@     Ä   d              ê   |              ê   î  Ãq@X      `    ¨              `    ƒ  $r@     ê   ‹  8v@î     `    Ù  x@=                         0    $              0    <                   T              `    l                       zPL |  ‹€@           Hx@w              <                       X   ¿x@å  ¨ì@?   p   t                           zPL |  ‹€@           L}@f   ºì@?            |        ¥}@,           ,   ‡}@(           D                         |                         ,                    D                    \                        zPL |  ‹€@           ¿“@4          0   <   úŸ@€          0   X   x⁄@N          0   t   »⁄@8          @   ê    €@X              ¨   X€@              »   t€@h          0   ‰   ‹€@«  Ãì@?   p      §ﬁ@}   Ëì@?   @       zPL |  ‹€@           @ﬂ@               <   `ﬂ@    î@?       X   |ﬂ@6   î@?       t   ÿﬂ@   î@?           zPL |  ‹€@           $‡@2   î@?       <   t‡@	              X   ê‡@	                   |                             zPL |  ‹€@           ú‡@6   ,î@?            |                         ,                    D   ‘‡@P               zPL |  ‹€@                               <                       X                   0   t                   0   ê                       ¨                       »                       ‰                          $·@R   @î@?         x·@   Pî@?            |        ‘·@,           ,    ‚@å      @    D   å‚@&                |        H„@b                |        ”@2      0    ,   T‰@                 |                              |                              |                              |                              |        ‹Ê@∫     @    ,   ÿË@d      @    D   <È@t      `    \   Í@      0    t   ,Í@Ê      ∞      ê   Î@é      †      ¨   §Î@î      †      »   8Ï@ñ      †      ‰   –Ï@           ¸   ‡Ï@P      p        |        îÌ@Z      0    ,   Ì@P      0    D   8Û@é     P    \   ‘ˆ@:           t   ˜@           å    ˜@           §   8˜@2           º   l˜@           ‘   |˜@           Ï   ê˜@ì             $¯@             0¯@           4  D¯@       0         P@¿@<@Ë@@@Ï!@"@òY@\Å@4à@Ë”@†◊@¥ﬂ@$·@ˇˇˇˇ`@ÿﬂ@x·@      @x⁄@`€˚?(
+¸?  Ä?  ¿? ‡˙?‡Ê˙? ?˛?PC˛?  ˛?@˛? Ä@  @  @ Ä@‡Ê˙?ˇ˙?(€˚?\€˚? Ä˚? ö˚?  ˚?àc˚?`€˚?†$  /@                         ˇˇ?≥      Ù?ˇˇ?≥          ı?ˇˇ?≥         ‡ˆ?ˇˇ?≥        –€˚?ˇˇ?≥                @Ù?    ˇˇ?≥    ˇˇ?≥    ˇˇ?≥       ¯€˚?@˛˚?Ë˚˚?¯˛˚?xˇ˚?∞˝˚?    ˇˇˇˇˇˇ?≥    ˇˇ?≥    ˇˇ?≥                                                               ˇˇ?≥    ˇˇ?≥      Ù?     ÄÙ?    ı? ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇ ˇˇˇˇ?≥      Ù?ˇˇˇˇ                   ÿ•@ ¶@  ı?ˇˇˇˇ                   ÿ•@ ¶@ ‡ˆ?ˇˇˇˇ                   ÿ•@ ¶@   ú¥@»@ƒ1@¥1@®1@à¥@H¥@Ï1@ÿ1@ƒ¥@p¥@®L@t1@»@ú1@d¥@T¥@à1@x>@Øæ≠ﬁúê@   ˇˇˇˇˇˇ?≥    ˇˇ?≥    ˇˇ?≥    ˇˇ?≥    ˇˇ?≥    8;@    8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@	   8;@
+   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@   8;@    8;@!   8;@"   8;@#   8;@$   8;@%   8;@&   8;@'   8;@(   8;@)   8;@*   8;@+   8;@,   8;@-   8;@.   8;@/   8;@0   8;@1   8;@2   8;@3   8;@4   8;@5   8;@6   8;@7   8;@8   8;@9   8;@:   8;@;   8;@<   8;@=   8;@>   8;@?   î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@î/@ˇˇ?≥    ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ?≥                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ˇˇ?≥    ˇˇ?≥    ¥ë@»@(»@4»@H»@`«@¯ @ÿ§@ÙG@‰G@¥ @å§@§@»£@\£@À@¯ @¯ @    ∏¢@å†@\°@–°@D¢@$F@<F@TF@TF@êF@†F@∞F@¿F@–F@‡F@        (z@?    ,z@?    0z@?4z@?    h‡@`«@   ˇˇˇˇã@?Dàˇˇˇ@ÑˇˇˇH
+
+ lˇˇˇ`ˇˇˇdˇˇˇhˇˇˇTˇˇˇXˇˇˇ\ˇˇˇ480<LˇˇˇPˇˇˇpˇˇˇtˇˇˇxˇˇˇ|ˇˇˇÄˇˇˇåˇˇˇ ˇˇˇ$ˇ(ˇ, ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ	 	ˇˇ  ˇˇˇˇ¸Ô˚?@L@lL@4_@d@,˚?    Ñ˚?                                                       \ @8 @ @î@T@H@º@§@                    ∏ @x @    h @                    ƒ˚?¥®@‘®@Ù®@$©@4©@<©@   @  	= †è> ¿'	  ° ‡∞@à´@§»@»Æ@ÏÆ@HØ@H…@L∞@†Ø@†ù@å…@¥≠@ƒù@¨…@å∞@P©@–∞@à»@    ¿∞@»∞@ƒ±@!@‹"@<`@P`@``@§#@Tasks currently running:    CPU 0/1 CPU 1   CPU 0              [%u] CO: init coex schm error!
+ [%u] CO: create bb reset mutex error!
+ [%u] CO: create semaphore error!
+                                   [%u] CO: create schm semaphore error!
+     ‡Ê˙?ˇ˙?     ˚?®	˚?   ®	˚?‹˚?   ‹˚?0'˚?   0'˚?àc˚?    Ä˚? ö˚?   (€˚?\€˚?0123456789abcdefghijklmnopqrstuvwxyz    rtc_clk E (%u) %s: invalid frequency
+   E (%u) %s: unsupported frequency configuration
+ %s failed: esp_err_t 0x%x    (%s)    at 0x%08x
+ file: "%s" line %d
+func: %s
+expression: %s
+ ESP_ERROR_CHECK used    free    	%p %s size: %x (%p)
+   integ->prev_status == this_prev_status && "prev status incorrect"   IDF/components/heap/heap_tlsf.c size == this_block_size && "block size incorrect"   tlsf_add_pool: Memory must be aligned by %u bytes.
+ tlsf_add_pool: Memory size must be between %u and %u bytes.
+    current && "free list cannot have a null entry" block_to_ptr(block) == align_ptr(block_to_ptr(block), ALIGN_SIZE) && "block not aligned properly"   !block_is_free(block_next(block)) && "next block should not be free"    block_size(block_next(block)) == 0 && "next block size should be zero"  prev && "prev_free field can not be null"   next && "next_free field can not be null"   tlsf_create: Memory must be aligned to %u bytes.
+   sl_map && "internal error - second level bitmap is null"    block_size(block) >= size   block_is_free(block) && "block must be free"    block_to_ptr(remaining) == align_ptr(block_to_ptr(remaining), ALIGN_SIZE) && "remaining block not aligned properly" block_size(block) == remain_size + size + block_header_overhead block_size(remaining) >= block_size_min && "block split with invalid size"  !block_is_free(block) && "block already marked as free" prev && "prev physical block can't be null" block_is_free(prev) && "prev block is not free though marked as such"   !block_is_last(prev) && "previous block can't be last"  next && "next physical block can't be null" !block_is_last(block) && "previous block can't be last" tlsf_realloc    block_merge_next    block_absorb    block_merge_prev    tlsf_free   block_split block_trim_free search_suitable_block   block_locate_free   remove_free_block   insert_free_block   CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x
+   start_ptr   IDF/components/heap/multi_heap.c    heap != NULL    multi_heap_realloc_impl multi_heap_register_impl    CORRUPT HEAP: Bad head at %p. Expected 0x%08x got 0x%08x
+   CORRUPT HEAP: Bad tail at %p. Expected 0x%08x got 0x%08x
+   head != NULL    IDF/components/heap/multi_heap_poisoning.c  multi_heap_get_allocated_size   multi_heap_realloc  multi_heap_free abort() was called at PC 0x  on core    E (%u) %s: no response
+
+    memspi  `¸˚?Ã˚?‹…@$”@T @Dœ@◊@¥◊@      ‹Ã@—@                ¨’@ê @ê÷@   ,Ã@x—@¸…@º…@    d—@PÀ@Õ@îÀ@@ @gd  E (%u) %s: No response from device when trying to retrieve Unique ID
+
+  out_write_protect!=NULL IDF/components/spi_flash/spi_flash_chip_generic.c   E (%u) %s: The flash you use doesn't support auto suspend, only 'XMC' is supported
+ E (%u) %s: configure host io mode failed - unsupported
+ spi_flash_chip_generic_get_write_protect    (˛˚?Ã˚?<œ@$”@T @Dœ@∏œ@,–@      ‹Ã@—@                \Œ@ê @†–@   ,Ã@x—@$œ@¸—@    d—@PÀ@Õ@îÀ@H“@generic chip_generic    ∏˛˚?Ã˚?’@$”@T @Dœ@∏œ@,–@      ‹Ã@—@                \Œ@ê @†–@   ,Ã@x—@0’@D’@    d—@PÀ@Õ@îÀ@d’@issi    E (%u) %s: chip %s doesn't support reading unique id
+   pˇ˚?Ã˚?å’@$”@T @Dœ@∏œ@,–@      ‹Ã@—@                \Œ@ê @†–@   ,Ã@x—@0’@D’@    d—@PÀ@Õ@l’@§’@mxic    ˇ˚?Ã˚?Xÿ@$”@T @Dœ@◊@¥◊@      ‹Ã@—@                ¨’@ê @ê÷@   ,Ã@x—@$œ@¸—@    d—@PÀ@Õ@îÀ@pÿ@winbond chip_wb   @∞&   ≈I’I ÂI0ıI 4                                                   ≈	’	 Â	0ı	 5   HÄ@ Ê 84@30@—Ä30"0 Ê  ˜tŒÄ@ÁxHÄ@Ü0     …I —	ŸI ÈI0˘I@ÄIPêI`†Ip∞I 4                                    …	Ÿ	 È	p—	0˘	@á	Pó	`ß	p∑	 5                                    ÕI —	›I ÌI0˝I@@IPPI``IppIÄÄIêêI††I∞∞I 4                        Õ	›	 Ì	∞—	0˝	@K	P[	`k	p{	Äã	êõ	†´	∞ª	 5                        “Ö                                                            ”Ö'                                                           ‘E]                                                           ’Ö©                                                           ÷Ö£                                                           ◊¢                                                           —Ö’                                                           —E”                                                                                                                          @A † ËÉ 2                                                  6Å  €˚?∞ @?Ï ¸?  @?  @  Ò? ¸?‹ø @  ¿ˇ    ∞ˇ  p‚˙?    Ò?8@?L@?¿@? ¸?¸ ¸?ö @ˇˇ     Ë@?8@?@?  ˇˇˇˇˇ    ¯Ô˚?Ù€˚?`  `  ò@?ò@?   `       @     0¸?¸?ﬁ˚?º@? @?@@?|@?P@?T} @4Ö @@?\@?(@?'  8Ò˚?Ñö @∏ö @@ ?D ?X ?\ ?¸?	¸?¸???  ¿ˇ º@?@?î@?‹˚?Ï@?@?L!@@?d@?Ä@?‡@?ò@?¸?H"@?l"@?‡!@?  @h?H¸?D¸?@¸?ÿ(@?úh @(} @(ê @(
+¸?  ¸? P PL%@?X%@?∏%@?0 ?4 ?, ?ƒ$@0¸? ¬ »ÄÙ?  ¸ˇ‘Å @h @P‹˚?T‹˚?ˇˇˇ˝ÿ¸?%  0‹˚?`‹˚?X‹˚?d‹˚??  ˆ?°:ÿP   Ë ?‰ ?
+¸?
+¸? Äˇˇx&@?‘&@?ú&@?   Ä∏ÄÙ?¸? ~  $?¿‡ ˇˇˇ?   @˝ˇÚøˇˇ2 ˝ˇ˜øˇˇ ˝ˇˇøˇN ˝ˇÛø&@?<*@? '@?'@?Ë)@?'@?$'@?4'@?‹ ?‡ ?h‹˚?<'@?à'@?X'@?P¸?X¸?‹¸? ÄÙ?¿›˚?(¸?Ë  )@? )@?0AÙ?4AÙ?8AÙ?<AÙ?@AÙ?DAÙ?– ?ƒ ?g ¡8 ?¯œ @  Ù? ‡ˆ?  ı?Ãê @    @ Ä¸?<3@?
+ˇ?≥
+¸?P3@?4@?l3@?î3@?¯3@?ò8@?¨3@?ƒ3@?‰3@? ﬁ˚?,5@?05@?∏¥@?X¥@?§—@4@?5@?@4@?p4@?ú4@?¨4@?ff  (ﬁ˚?  Ä¿ ¿L@?@?,@@?p?@?®?@?ÿ?@?Ï?@?@@?@@?Ñ¸?PÄÙ?  P PT@@?¯@@?ò@@?†¸?ˇˇ¡ˇ0ﬁ˚?ƒ@@?A@?ê6@ˇˇ?¿ò¸?ÿ√@–@@?Ë@@?∞¸?
+¸?
+¸?∏¸?‘A@?LB@?¸A@?4B@?òƒ@<B@?dB@?  ®B@?Hﬁ˚?8;@PÅ@?ÿB@?¸X@?»¸?ﬁˇˇˇˇƒ¸?   ˇ   T_@?T∆@;@`_@?l_@?Ñ`@?∏_@?0¸?–¸?LÕ@ÿ¸?pı?åı?êı?Ñı?àı?îı?§ı?‹¸?>@  `a@?pa@?òı?  ¿tı?úa@?»a@?»`@?¸?†o@?p@? o@?ƒ¸?–o@?¨‡˙?®‡˙?∏‡˙?Ä‡˙? ‡˙?òÓ˚?$‡˙?l¸?¥‡˙?h	¸?`	¸?\	¸?x	¸?p	¸?TÄÙ?XÄÙ?DÚ˚?pp@?»p@?†p@?$
+¸?$
+¸?òÚ˚?òÚ˚?àÒ˚?0Ô˚?(Ô˚?|`ˆ?8Ô˚?$“@    Ä	¸?î{@?ú{@?ÿ“@ÿ{@?‡|@?xz@?Xz@?ƒ|@?8z@?®z@?Ù{@?–. @†ı?¥	¸?¨	¸?î	¸?å	¸?Ñ	¸?§	¸?ú	¸?8}@?H@<B@?L}@?}@?X’@–}@?~@?®}@?¯}@?º	¸?ˇˇˇﬂˇˇˇ   pˇˇˇÔê‚˙?      ˇ  ˇ  $~@?$Ä@?,Ä@?4Ä@?@Ä@?pÅ@? ’‘ºº™±∏‡	¸?Ï	¸?‰	¸?@ﬂ@HÔ˚?DÔ˚?Ù	¸?‡Å@?Ç@?0Ç@?êÊ@,Í@Î@§Î@MÏ@‡Ï@dÇ@?ËÒ@8Ú@êÔ@
+¸?òÇ@?ˇˇ LÔ˚?H~@PÔ˚?
+¸?
+¸?ÉÄ@?†Ç@?≠Ç@? Z@XZ@åZ@¿Z@òd˘?xd˘?Xd˘?     ﬂ˜ˇˇÇÄ@?åí@? í@?¥ë@?‹Ç@?¸Ç@?‹É@?ÙÉ@?òÖ@?úÖ@?†Ö@?§Ö@?®Ö@?πÖ@?Ñ@?ˇˇÔ  ¿?  0@  ‡?
+   àÖ@?xÖ@? Ö@?Ù7@7@ê7@å5@®6@x* @D… @‰& @®6@‹6@Ä“ @ÃÖ@?ÏÖ@?ÃÜ@?‰Ü@?πÖ@?®Ö@?¸Ü@?xà@?hà@?àà@?®à@?àâ@?†â@?òÖ@?úÖ@?†Ö@?§Ö@?®Ö@?πÖ@?∏â@?4ã@?$ã@? Ö@?Dã@?Lã@?Mã@?Pã@? Ö@?Qã@?hã@?  '  ÀÖ@?  ?  ˛  ¯?aCocßá“?≥»`ã(ä∆?˚yüPD”?0é@?‘ã@?é@?  $@  @  ¿¸  @8… @ê% @T) @h7@TÔ˚?Qã@?\ç@?‘ã@?9é„8   –ç@?      PCˇˇÄ¯é@?è@?¯è@?ê@?πÖ@?®Ö@?(ê@?§ë@?îë@?0ÄÙ?ˇˇˇ#ÄÙ?ˇ? ˇ?¿ˇˇxÄÙ?   |ÄÙ?ˇˇˇÒˇˇ?˛   D ?\ ?î ?† ?§ ?¨ ?pÄÙ? ÄÙ?   ÑÄÙ?ø™˛ˇÄÄÙ?ˇﬂ˛ˇàÄÙ?ˇˇUıÏ¸?¸¸?,‹˚?L%@?Ùb@?4c@?ºc@?lc@?òc@?|¸?t¸?P1@?∏1@?ú1@?t¸?x¸?ˇˇˇp¸?‰@?–1@?ﬁ˚?6a +≠eå *%≤ ¢¢&Âº *e± + •ä  e∞ ¢†ñeª  •Ø !¸A¸q¸Q¸b†p|˛ÕΩ≠›iY% 1¸,,ÕΩ≠iYÂ +≠eÖ *%´ ¢°Ù%∂ ¢†e™ ±¸ ¢ Â2 ± ¸ ¢ %2 ±ˇ˚≠•1 ¢£Ë•≥  6A ‚† °˙˚‡ﬁ ‡Œ Ωe.   6A 1Ò˚!Ó˚0£ e :0£ e †∞t≠•ÁF˘ˇ    ¢ • ú
+ ¢ • †∞t≠Â Ü˘ˇ   6A ®Re‘ -
+6A ®Re◊ -
+6A Ç"  ¢ Ç(‡ åö®R%ﬂ -
+Ü   |Ú6A Ç"  ¢ Ç(‡ åö®RÂ◊ -
+Ü   |Ú6A ®ReÁ   6A ¢"0∞tÂ‡ "†ê    6A ®RÕΩe‚ -6A ≠ÂÌ  6A Åπ˚¢(Â  * %ŸÅ∑˚®X%  å•ÿÅπ˚®X%… åeÿ  6A 00t„ ÂÁ 2"ßì¢† •‰ ¢†
+•ü ¢"•≈ âR  6Å ®B`¿tp`tPêtrD∂:B àRå¯≠ôa…Q%˚ˇ®B»Qòa‹JêWAı;¿áAπq¸8F4   &&*Ü1 êWAõ¿áAπq•‹HÜ, êWA≈
+¿WAe
+Ça††tÚV    Âî Ç!0™¿á∫=¢"ÂÈ ç
+Ãjeê ∆¯ˇ  ≤† ≠âa•Úˇ¢†d•ì àaÚ¢ÿqyiÌÕΩ%¶ ©RÜ ≤†  ¢ 2† ÂÔˇ9RF “!raba ÌÕΩ•£ ©RÜ
+ ±m˚“!ÌÕyie¢ ©Re› eå =
+∆€ˇ  ô#ôq \#’ˇ   6A ±Y˚—a˚°Y˚‚£Ë¬° ë\˚ââ;È+ŸâKâ[…kââ:È*Ÿ
+πJâZ…j*ââ9È)Ÿ	©IâY…i 6A KB{r≤ ¬†
+≠Â ]
+,Î≠ÂΩ™•D™fwî‚≤¨≠% ™&6A ≠eÕ  6A ÅA˚2BâBBRBbB  6A B" B$3≠Âì¥Õ
+Ω≠‡ H=
+H4±5˚,≠‡ :*  6° Q1˚@@t¿  h¿  i±bA+ˆ$§b¡+õF  =
+@ì‚êÄt@£¬ó;Ç»0ÄÄtF Ç»7ÄÄtb∆ˇÇF G≥Ÿ`¶ Âå¥8Õ
+83≠`∂ ‡ ¿  H±¿  8-
+7Â÷ 6A ≠ÃƒH0∞t8$‡ F  @¿t0≥ %˜ˇ†* ê  6A @ƒ 0∞t ¢ Â¸ˇ†* 6A ‚† °˚‡ﬁ ‡Œ Ω•Ôˇ  6A eq ©2Ç"  ¢ Ç(‡ ÷Í %p à2ò"Ä™¿ó:„|˙-
+  6A ]úîP• e¸ˇ ÉÄñÍ ¢H "¬'îÍÜ   -  6A ±Ì˙≠M •* ≠ e˘ˇñ⁄†∞t≠ Â5 Ü˘ˇ≠ % ≠ el-   6A ‚† °›˙‡ﬁ ‡Œ ΩÂ‰ˇ  6A ÇwË¢" * %0ªíÇ† êêdíBÇb ââ" 6A ≠%˝ˇ  6Å A»˙¿  Ç$ ¿  Çaÿ7∏Ü4 ÇwËX¨•ΩÕ€°%¥≠Â*ªRwec  RØÄ82Pà ÇB08ewh2F 2ØÄ0à ÇB2wËÜE RÇØÄ0`dÄU`U RB:"2B F6 X9":5"C Ü1  h2`heÜ  bRÇØÄÄU RB ¢ wÂ¢" 0√ €±%¥2wcÇØÄ`PdÄ3P3 2Bj"2B   8i"Cjc"F Ü 2√ÇØQê˙Ä37µ Rwe	à2
+ÄheF b"¢" ΩÂª]
+™˝ÇwËB®™7∫	†√¿™•e#¥í`ÄÙ3ê`dYbB9â"äU"E F  ¿  àq¿  87F ¬† ≤ %¥¢†FÏˇ9"Fˆˇ e´6A ÇwËàå∏àF  Ë78∆	 0≥  ¢ eÂˇ⁄2wc	8208eÃ”F 8"Ãc(2† 2B -
+6A @¥  ¢ Â˙ˇVä ≠•ﬁˇ  Ç ¢ wË¢" ¬ƒΩ•¥ÇwhíØÄ@0dêà0à ÇBJB2D  àI"åXJH2D   6A íÇ† êêdíBÇb ââ"á0£ ÂR¥Õ
+Ω≠Â˜ˇ  6A Rwe∏2∞∏eF  ∏"Ã3F Ã$Ü  ∞TÄPµ  ¢ eˇZ˛Çwh®2†®e™¢'3F à®"™®á≥∆   ß≥
+ƒΩe¥F  ¬ƒ0≥ ÂÙ≥2wcÇØÄP@dÄ3@3 2BP"Ä2B Ü ∏Y"å[Zª"K   6a ÇQÎ±≠2A%ıˇ-
+6A ≤† °	˙∞Î ›ÕeØˇ±˙°˙eˇ  6A °˙•…ˇ 6A   t,x00t'∏∆ì Å˙‡íöà¢ $Ç à#fÇ†¿áÜS ã –∏—˘˘Äõ¿–ôöù‚†¿»	ÁÜ4 !!Ù˘1Ù˘*,'3—Û˘¡Û˘°Û˘≤†÷Â¿  (8¯)0" ¿  )3¿  H|˛ @ 3°0>0ÒÈ˘ã(@3‡"¿  9*/¿  8"|¥@3¿  9"¿  (_ @ 3° 3  ‘0" ¿  )_(9¿  8 .00"8I¿  )åÛ¿  (0Ó0 Ó¿  ‚l Äã¿–àäç8Xú#¿  H"Øˇ0"0@"¿  "l ! ˘*™!…˘¿  )
+P Ãà¿  ÿ|˚Äã0–à¿  âÿIàY'c¿  òÄª0–â ∞∏¿  π∆
+ 7c¿  ò–ª0Äâ ∞∏¿  πÜ ¿  HÄç Äª0@ª¿  πc(¯ëÆ˘'8 @ à°¿  â©   @ à°¿  âŸ∆ ë•˘c-,'¥Ü) Ùë°˘'4 @ D°¿  IôF  @ D°¿  Bi'„àÄÉ¡ä˘ú¡â˘Ç†ÄF ¡Ö˘Ç°    —é˘0∞⁄™åã±å˘∞à F  Ç†áì|ÿÄÇàÄ≥ì@ã¿à ¿  â
+CF   0ÖA@à¿à ∞3¿  â
+
+H0äÉ="¬ ‡"*)¿  9" 6A 00t  t¨ÛÛ'3 @ #°1q˘¿  )#F  ,'3? @ #°1j˘¿  )S Û'3 @ #°1d˘¿  )3 ,'3 @ #°1^˘¿  )c 6A • ∂6a à¡˝≠ΩÕ›Ìˆ(   ÅT˘Ça %)∑†* ê  6A •0≤¡P˘—P˘ÅQ˘‡ -
+  6A ≠eC∑  6A ¢†•q °I˘≤†%ÂUÅG˘áö+eå™»JÂÃ%T%6Ã::%0Â4e46A ë<˘  t¿  àyÄÄu&ËÙÅ9˘¿  )  6A ë7˘  t¿  àyÄÄu&ËÙ°0˘Å0˘ßÅ/˘¿  ) 6A ë/˘  t¿  àyÄÄu&ËÙ°&˘Å&˘ß°&˘Å%˘ßÅ%˘¿  )6A 2Øˇ¢" Ωeú∂fÙ¢•,®ÕΩ•W∂6A BØˇ¢" @¥ Âô∂fÛ¢|˚ÂŒå⁄·˘—˘±˘¬°%•‘µVc¢•å⁄·˘—˘±˘¬°(%”µ®ÕΩeR∂  6¡ PPtçY1 ptRd"```tÄÄÙiAâQ)qYa∂7Ü> Ç!XAP( "#&Ïa˝¯–'≠*&•bå:≠ÂÛˇÅ¯¯–gjX®Ãä%o∂©*¸ÅÚ¯jX≤ØˇÂé∂&®F¸ˇ®Q9ë8a@Ç@ê∫@D˝Ì›Õ≠â°ô±I¡Y—2A8YÒÂ4W·‚¯—„¯±ﬁ¯¬†ÖÂ∆µ≤¡$≠•üå⁄·ﬁ¯—‹¯±ÿ¯¬†Üe≈µH1XA|˛› ƒ# µ#≠Âmå⁄·÷¯—”¯±œ¯¬†á%√µàqúh,K≠•å⁄·–¯—Ã¯±»¯¬†åe¡µ°«¯j:®›Õe@∂≠•Ëˇ  6A å2≠•Âˇ6a º2Øˇ¢" 0≥ eÅ∂fÛ¢≤¡ÂÌ2åC81391“† ¢" –Õ Ω•;∂(1  6A ºr2Øˇ¢" 0≥ •}∂fÛÇ1ü¯åx1°¯&1°¯¿  8s®00u"†ÄÕΩ0"¿e7∂6a í2A2Øˇ¢" 0≥ %y∂†  f2å√2ÇB2A ¢“†≤¡• Ã¢A®Õ–Ω e2∂"  6a R2ABØˇ¢" @¥ Âs∂†: fBåî22AÜ   ¢“†0√ ≤¡e≈ÃZ¢AF  B2BBB®ÕΩe,∂"  6a 2A¨|Û¢" Ωen∂Õ
+fÚ¢À±e∑®ÕΩe)∂6A ¨RØˇ¢" Ω•k∂fÙ¢ÕΩÂ¥®ÕΩ•&∂  6A åR≠eŒˇ  6A Å]¯à&&(Ï(°[¯Å]¯‡ ∆ °Y¯ÅZ¯‡ ∆ °W¯ÅW¯‡ ∆ 
+ÅT¯‡   6A R "∂2!K¯|¯â∆   ÅH¯òó)Â˘ˇ 6A ÅC¯(  6A 0êt¬ÇA.¯åxA/¯&A0¯¿  Ç$2†ÄÄîá3Vy¢£ËÅ;¯‡ ¿  àƒÄÄîá≥Î|Û¢" 0≥ Â\∂fÛÅ2¯¿  8§¿  H¥Ä3ÄD®ÕJ#Ω !!%∂F  6A R"Å¯Ç Å¯&Å¯¿  òh!"¯ ô!"¯ ô ¿  ôh¿  òh|‚ ô¿  ôh¿  òh ô ¿  ôh  6A ÃRÜ2   A¯2Ç Û	&F+ F( ¿  àcë¯êàë¯êà ¿  âc¿  àc|Èêà¿  âc¿  àcêà ¿  âcíD  ¢ ≤†•Ìˇ-
+Í˘¿  àc|Èêà¿  âc2D •( 1˙˜ ™¬ù"¢Xß2à‡àäÉ8†B¿0™¿G∫5- àKô&∏(Fˆˇ!Ï˜Ü   1—˜(ˆÜÂˇ  1—˜VË¯’ˇ1—˜VX¯∆“ˇ 6A •ﬂ˛1„˜!„˜Ç åe:ÂÍ˛ˇ%¯˛∆˙ˇ6a Å‹˜í† íH Âõˇ‚†Ò⁄˜¡⁄˜±€˜°€˜ÈÂïˇ 6A ‚† °◊˜‡ﬁ ‡Œ Ω•ˇ  6A ‚† °“˜‡ﬁ ‡Œ Ω%ˇ  6A !Œ˜¢†¿  ÇB %∂ÅÀ˜©ÃJ¿  ¢B  6A Q≈˜¿  R PPtV% •¸ˇa¡˜≤Øˇ¢& Â;∂Qø˜XºE‹bà5®%›Õ ≤ ‡ XV≈˛F ]àVàˇr†(5®%›Õp∑ ‡ R% Vµ˛“† ¢& –Õ Ω•Ûµ  6Å %H¥¨j,sß3ß≤†1A'ìÜ> Ü?    ß≤†1A'†2A'ìË'∫2Ø:2å”2Ø`:2¨S2¬∞¨∆Ûˇ2†7í1ö˜¿  H◊d¿  8B††0<0$ì¢¡ •2¥8q'ìF(   ¢ ± •¥-
+Í¯8qLıAâ˜75HQQâ˜8aPDÇ0D¬X1L¯1É˜W88ÅÉ˜X!Ä3ÇP3¬Q~˜àåàÕΩ¢† •Ïˇ° %8¥G0£ e=¥°z˜†£¢†¢’%¡±ò1L˙çó∫Ås˜ÄâÇëu˜Xêà¢ër˜ÄÜAâ	ıˆÕΩ¢†%ËˇF  ':F”ˇ∆æˇ 6a ≠%'¥à1L˘!b˜á9(ëb˜Ç!ê"ÇÄ"¬  6A Åa˜‡"*à∏Ç+0Ü  ¢+2à ™ò
+0ô¿íj ¢+1ß(Ç† ÷) Çk0‡»í+/áôÿ¿    6A AQ˜¿R2≈:40£ %∏ZÑÇÏHÇ*àëK˜‡àäâh(≠•|å2≠ÂÛZD"†"D¿  ≠¿  e∏ 6¡ =" )AHA¿TKEë:˜JIa9˜ZfàA‡àI!A5˜äDi1h)Å)ë-ÇaIq¿  í&ÃÜÑ%I—Pyá ±+˜*k®!¿  Â¸∑|Ÿx¿  H7êD®!¿  I7¿  Â
+∏h¿  YFB˙VT˚R‰B#7ïVî≤¡$¢#3BC‰¿  ¿  e∂∆Î  Ù¯¿  HvR†Ä@@u@E¿Ã∆Âr#<måß≤#:[ ¬#=V|≤¡(¢#8%'µ¬¡$†∫ ¢c;Ír#<VWí*à
+rc:íc<fhrC¯¿  xrC˘¿  ¢#8¿  e,µr#<w˚≤#:∆    ≤#:Ã´Ω
+à°¢c:Çc=À¯¬#=l¯àqXXEi°f>®!¿  ÂÌ∑ÇØøëÍˆ*YX¿  xÖÄw®!¿  yÖ¿  r%ÅÊˆÄw ¿  re¿  %˙∑≤#:¬#=@Ãc“¡(®1ÂTà°ÄD¿í#:äôr#<Äw¿R#=ÄU¿íc:rc<Rc=åe¿  ∆ ≤#;¬¡$¢#8%!µr#<Rc;Rc:V˜˝r¯fŸ°…ˆ*Zò±Àˆ®!¿  ≤i¿  •„∑®1≤˘eIò±ƒˆ¿  à9∞X ®!¿  Y9¿  %Ò∑]rC˙¿  åtr#<¿  FßˇµbQµˆ&*EX®!¿  iE¿  Âﬁ∑X¿  H5`D ®!¿  I5¿  ÂÏ∑∆~ °Æˆßâ∆Ã A¨ˆR —ßˆ&–Y∆  –ô ]rD ¿  ¢(V™+¿  Hv@@t¿  b&¿  i±¿  h±`m§¿  x±pr§g∑¿  H±@M§¿  h±`b§`D¿¿  F ¿  x±p}§¿  h±`b§g∑b†Ä¿  H±@M§jD¿  h±`b§`D¿∆ b†Ä@¶ìM
+aˆàQiaäfhbIÅåfáÈDBar√8¬¡ Ω®1ôŸ¿  e@°uˆ*J∏¿  ¬+¿¿t¿  B+@Htòÿ¨ızòÅi¿  ŸK©—ô·ñ∂≠	väjÉÇ8ª«G´Ef¿  F  ahˆ“°êò`¶ ¬!¿  “kíA<¿  Y—…·¿  Â»∑í#?åâ¬¡$Ω®A‡	 ≠%◊∑òÅ|ˆΩ“¡$ê¿t®ìíC∏¿  ¿  eË¥}
+®!VRC(¿  ¿  •ƒ∑±Gˆ*[≤Æ˛ò¿  X9∞U®!¿  Ri¿  %“∑X—&uF'   ¢!•¡∑R!G•7PD¿í!àaöhX®c@™¿b%/ñB%1G)ùB%0óH‡fB%2jd©íe/¿  F  HcJñ÷F í∏JôXahQjEHR$/e¢$1ß&pg r$0g‡Ur$2ZWôbd/¢!¿  e…∑®#Ãä$I—¿  ∆Ú “† ¬¡$≤¡4Â±µB†¢#I—¿  ∆Î %∑∑Ã5Ü   xÅXcGß6pD¿@E¿òQàaöhhr&/ó¢&1ß)	¢&0óF‡wR&2zuIíf/Xc¿  F  ñ÷òQZfàaöHB$ r$/ó¢$1ß)í† ¢$0ó‡wR$2zuiXcíd/B∏ZD®!Ic¿  eæ∑∆ƒ  ±Ôı*{®!Ÿ¿  •≠∑≤Æ˛ò¿  h9∞f®!¿  i9¿  •ª∑hr°¿  yFÿ•-XÅ¿  ŸFvY·i—RD ¿  ®#¿  Ü≥ GiK¢!Â®∑®1e	®!•∑∑a‹ı`¶ •ß∑B#?åÑ¬¡$Ω®A‡ `¶ Âµ∑QÕı EÄR†H¿  YD4I—®#¿  F†   r†Äw	¿  yFI—®#¿  ö G	;a∆ı`¶ %¢∑B#?§ ¬¡$Pµ ®A‡ `¶ e∞∑a∑ıR† FÄH¿  YDDI—®#¿  Fä Gpyºóaµı≠%û∑B#?åÑ¬¡$Ω®A‡ `¶ e¨∑ÅßıR† HÄH¿  YDTI—®#¿  Fz   A§ıG	n¢!%ö∑Ω®1Âˇëõı*ixë°ı¿  h7êf¿  i7b¯f¿  h7PV ¿  Y7®!¿  %¶∑°éı*ZX¿  IEB¯fBC¯BC˙¿  ¿  Ü[ ¢#6≤¡$•úµÜX  AsıG	4±Åı kÄ¢!eí∑xëÜı¿  X7êU®!¿  Y7¿  e†∑X¿  IE¿  J   —vı◊	t¿  ŸFI—®#¿  H  AxıG	=¢!•ç∑®1eÓhQQhıjUR% ¢!bE¿  ¿  %õ∑Åcı*XhÖY—¿  IF¿  F,˛  °`ıßâÜ- AYıàQäTXXEIa&6¢!ëVı IÄ¿  •á∑Ç!Xaäex°[ı¿  X7†UhhF¿  Y7fF¿  F
+   ¿  Xv¿  Y¡¿  X¡PPuå˛¿  X¡PX5e˙¿  ∆˛¢!L%„h¿  XÜpU ¿  YÜ®!¿  %ê∑≤¡$òaHQJYÅ5ı*hxë6ıR& ¢'5¿  íe¿  %áµ∆  ¿  ôF¿  ˘˝H—fÑ	°)ı*JhFı˝®#Ã™±%ı*Kh∆Ò˝  “† ¬¡$≤¡4etµQı EÄb$ FÎ˝(ëf≠	e1±  6a ¶2%Âúπ±#ı"†ﬁ†⁄ ∞Î Òı¡ ı)¿  eêπ|Ú∆   ∂C$eöπ±ı"†ﬂ†⁄ ∞Î Òı¡ı)¿  Âçπ|ÚÜ  Qı¿"B¬ZD≠Âr∑*•Ωe,≠•Å∑6a ¶2%•ïπ±ı"†Ë†⁄ ∞Î Òı¡ı)¿  %âπ|Ú∆   °ÒÙ¿" ™Ä0≥ e*"† 6a ¶2%•ëπ±ˆÙ"†Ô†⁄ ∞Î Ò˜Ù¡ÛÙ)¿  %Öπ|Ú∆   ∂C#%èπ±ÏÙ"††⁄ ∞Î ÒÌÙ¡ÌÙ)¿  •Çπ|ÚÜ Q◊Ù¿"B¬ZD@§ •g∑*•Ω%≠ev∑6a ¶2%eäπ±ŸÙ"†˘†⁄ ∞Î Ò‹Ù¡÷Ù)¿  Â}π|Ú∆   °ƒÙ¿" ™Ä0≥ %"† 6a ¶2%eÜπ±…Ù"° †⁄ ∞Î ÒÕÙ¡∆Ù)¿  Âyπ|Ú∆   Q¥Ù¿"B¬ZD≠Â^∑*•ΩÂ≠•m∑6a ¶2%•Åπ±∂Ù"°	†⁄ ∞Î ÒªÙ¡≥Ù)¿  %uπ|Ú∆   °°Ù¿" ™Ä0≥ e"† 6a ¶2%•}π±¶Ù"°†⁄ ∞Î Ò¨Ù¡£Ù)¿  %qπ|Ú∆   QëÙ¿"B¬ZD≠%V∑*•Ωev≠Âd∑6a ¶2%Âxπ±ìÙ"°†⁄ ∞Î ÒöÙ¡êÙ)¿  elπ|Ú∆   Q~Ù¿"B¬ZD≠eQ∑*•Ω•v≠%`∑6a ¶2%%tπ±ÄÙ"°"†⁄ ∞Î ÒàÙ¡}Ù)¿  •gπ|Ú∆   QkÙ¿"B¬ZD≠•L∑*•Ω•Ç≠e[∑6a ¶2&eoπ±mÙ"°W†⁄ ∞Î ÒvÙ¡jÙ)¿  Âbπ|Ú∆    QWÙ¿"B¬PDÄ≠*%•G∑(≠¿  9B¿  H2@3 ¿  92¿  eU∑6A AIÙ‡2:4àR(ÃUF   ¬∏≤»8®òeV¥fË¿B!@ÙKD*D≠%B∑(≠Ç∏HbäDIbBB(¿  ¿  ÂO∑≤°(®eÙˇ-   6a ¶2%%cπ±<Ù"°a†⁄ ∞Î ÒFÙ¡9Ù)¿  •Vπ|ÚÜ   Q'Ù¿"B¬PDÄ≠*%e;∑X|Ú020≠¿  (5 3¿  95¿  %I∑ 6a ¶2%%]π±$Ù"°Ã†⁄ ∞Î Ò/Ù¡!Ù)¿  •Pπ|ÚF   QÙ‡B@UÄB% VTÂYπ"°Õ±Ù†⁄ ÌÒ"Ù¡"Ù)¿  eMπ"°   ‡£%gπm
+º
+¿B!˛ÛKD*D≠Â1∑X≠2e1B%2"e0be2"e/¿  •?∑≠%fπÜ  "°  6a ¶2%ÂRπ±˚Û"¢-†⁄ ∞Î ÒÙ¡¯Û)¿  eFπ|ÚF   2†G£#%Pπ±Û"¢.†⁄ ∞Î Ò˝Û¡˝Û)¿  •Cπ|ÚF Å€Û¿" 8ÄK"ä"ò%≠¿  YI¿  Â'∑≠Ω•[8≠¿  (3P" ¿  )3¿  •5∑  6° °…Û‡Çäö|˚âAà	¢(4iaôI1¿  •:µ
+òh	Ç&7¢F¿  Ê!¿B}	KÑëºÛJô°ªÛääI!M	h1ôQâq¿  Ü<  ¢&8ô¿  eb¥m
+hòPèÉ`aA|˝Ã®	≤¡$H1¢*8I±Hai!˘I°âë¿  Â/¥¯]òm	x1m=-	Ç" P∂Ä|˝ò!pIcÕ@w¿¢(8PTÄÂ,¥¨≠eÍˇVá˝F8 à|˚¢(3e/µfÚà
+àH©ëf2®q¿  %∑≤Øøà¿  òà∞ô®q¿  ôà¿  ò8±çÛ∞ô ¿  íh¿  Â#∑“¡$ÕΩ®QÂ~àëg∏¨à≤† ¢ íH‰¿  ¿  Â‚ˇÇ!	Äf¿ä3V¯u!xÛH!J2X!yÛ®q¿  )E¿  e∑∏a®Q%uX¿  85 # ®q¿  )5¿  Â∑|˚ÅhÛòAö((¢"6e#µ“† –Õ °cÛ–Ω àAä*(¢"3eﬁ¥“† –Õ "!Ωë\Û*y(¢"4Â‹¥(16a ¶2%Â,π±cÛ"¢:†⁄ ∞Î ÒrÛ¡`Û)¿  e π|ÚF   ÅNÛ¿rr«ÄwÄpß e∑Ç*à!IÛ‡àäÇÌ›¢ÕΩeÂ-
+≠•∑  6a ¶2#•&π±JÛ"¢R†⁄ ∞Î ÒZÛ¡GÛ)¿  %π|Ú∆≤ ñ„rØˇpÉ0í† @ ô°ÅRÛ0• @ÄÄëÄâ 9 @êêë†âìË"e!π±6Û"¢S›
+ÌÒFÛ¡GÛ)¿  %π-Üû  ñrØˇpÑ0í°˛ @ ô°Å=Û@• @ÄÄëÄâ í†ˇ @êêë†âìË$%π±!Û"¢T†⁄ ÌÒ1Û¡3Û)¿  Âπ-Üâ   ñırØˇpÖ0í† @ ô°Å(ÛP• @ÄÄëÄâ 9 @êêë†âìË#Âπ±Û"¢U›
+ÌÒÛ¡Û)¿  •
+π-∆t   ñrØˇpÜ0í°˛ @ ô°ÅÛ`• @ÄÄëÄâ í†ˇ @êêë†âìË#•π±˜Ú"¢V†⁄ ÌÒÛ¡Û)¿  eπ-Ü_  ñqÛ‡Éäwòq°ÚzyÅ°Úw8≤¢B—Û¡Û°Û%/¿  Ç) ≤†≠qˇÚpàq≈Úpà ¿  â	¿  e3Ç*à‡àqŒÚäáÕ≠≤ ÅıÚ‡ ñt‡t1ÌÚp3Är# 1àÚ:7ÅáÚ7∏ò≠¿  8ÅÍÚÄ3ÅØÚÄ3 ¿  9¿  %<≠2ÂH*3q∏Ú‡3:7≠≤ÅﬂÚ‡ ñE‡E1÷ÚJ3H1qÚ:4qqÚ77œˇ+≠¿  8q”Úp3qòÚp3 ¿  92¿  •C*3‡3A¢Ú:4–Õ ≠≤Å»Ú‡ ñ‡F1¿Ú@3ÄB# 1[Ú:4Q[Ú75Ü∏ˇ≠¿  8QºÚP3QÇÚP3 ¿  9¿  Â02`¶ e=*#1äÚ‡"*#≠≤Å±Ú‡ F  6a ¶2#%˜∏±åÚ"¢ê†⁄ ∞Î Ò©Ú¡âÚ)¿  •Í∏|ÚÜB V3•Ù∏±ÉÚ"¢ë†⁄ ÌÒüÚ¡†Ú"a ¿  %Ë∏|Ú∆8 Bwd%%Ú∏"¢í±wÚ†⁄ ∞Î ÒïÚ¡ñÚ)¿  •Â∏|ÚF.   B#∂D"eÔ∏"¢ì±lÚ†⁄ ÌÒäÚ¡åÚ)¿  Â‚∏|ÚÜ# B#∂D#•Ï∏"¢î±bÚ†⁄ ÌÒÄÚ¡aÚ)¿  e‡∏|ÚF   ¢ Âæ˛¿BaKÚRƒ`UÄ≠jDÂƒ∂Ω≠e	∏c≠Â·≠∏%‰≠∏#eÄ≠∏•|≠∏3%s≠eÛ¬≠∏C%Î≠%–∂≠e!≠Â 6a ¶2#•„∏±>Ú"¢¨†⁄ ∞Î Ò_Ú¡;Ú)¿  %◊∏|Ú∆% V3%·∏±5Ú"¢≠†⁄ ÌÒUÚ¡RÚ"a ¿  •‘∏|Ú AÚ¿"*dKRZTà≠ëMÚ¿  ôH¿  Â∏∂≤° ≠àÄªå{≤eÜ  ÂÇ# h
+`¶ ≤%zàh	≠≤ÂÈà*$P• 2" ¿  (3ÄÇ ¿  â3¿  e√∂6° ¶2%e◊∏±Ú"§†⁄ ∞Î Ò0Ú¡
+Ú)¿  Â ∏|˚FF   a˜Ò‡B@VÄb% VF%‘∏"§±ˇÒ†⁄ ÌÒ#Ú¡Ú)¿  •«∏|˚F9   eÉµr% m
+Ω¢'4•√¥≤°⁄ò≤† ¿r¢)5e¬¥ë‚Òz)(¿  (r¿  )±¿  (±  uVB¿  ∏±∞(5b¿  ∆    :6†≥¿!”Ò@BÄ"$ ¢"5%æ¥(‹
+Ω
+›
+Õ
+¢"4•y¥≤°F “† ¢"4–Ω –Õ ex¥F 8Ω›Õ¢#4%w¥ΩÜ Ç«äY≠ôq¿  e¢∂≠òqz)xÅøÒ¿  "'Ä" ¿  )7¿  ÂØ∂evµ`*¿'≥∆›ˇ∆€ˇ-6a  ¢ ¶2#•¬∏±ªÒ"§Ö†⁄ ÌÒﬁÒ¡∏Ò"a ¿  %∂∏|Ú Å§Ò‡" àÄ"( Veø∏"§Ü±≠Ò›
+ÌÒ“Ò¡πÒ)¿  %≥∏|Ú∆ V3%Ω∏±•Ò"§á†⁄ ÌÒ»Ò¡…Ò"a ¿  •∞∏|Ú "† ' ‚  “ ÕΩ%pˇ-
+6¡ 2a	@4 )ÅRa
+¶2$¿  %∏∏"§ß›
+±êÒÌÒ∑Ò¡éÒ)¿  Â´∏|ÚÜW "!	V•µ∏"§®±ÜÒ›
+ÌÒ≠Ò¡≠Ò)¿  e©∏|ÚÜM B!‡D!pÒ@bÄI±HVD¿  %≤∏"§©±xÒ›
+ÌÒüÒ¡ÑÒ)¿  Â•∏|ÚÜ? ®t∏°•¢¥&∆; òs](Å¿BKDÅ]ÒäD")Ví≤¡<¬!
+¢)	•∂≥Ω
+åÍ8(Ò©”©√)≥¿  ∆
+ ¢!•AˇZ í& ÜÚˇ1MÒ›
+Õ
+Ω
+H±J#(®rp' •X¥F#  ∏…'µù- ù U¿8ëÕz£*wôq¿  Â´±≠eÇ∂8òqΩ	àcêà¿®Åâc¿  •u˛≠à√*àâ√¿  •è∂òàπ (¿)π‹Ç®ô∏Ÿ¿  •¥≥8®Å)”)√¿  •8ˇòV≈Û-Ü  0# “† ¢)ÕΩÂO¥F  |Ú 6a ¶2%•ü∏±.Ò"§‚†⁄ ∞Î ÒVÒ¡+Ò)¿  %ì∏|ÚF   ÅÒ‡" (Ä"" V"eú∏"§„± Ò†⁄ ÌÒIÒ¡,Ò)¿  Âè∏|ÚF àbâ¿     6° ¶2&Âò∏±Ò"§ˆ†⁄ ∞Î Ò<Ò¡Ò)¿  eå∏|Úh    A¸‡20TÄ2a8Ï3¿  %ï∏"§˜±Ò›
+ÌÒ.Ò¡Ò)¿  Âà∏|ÚZ ¢#≤ØˇeÖ¥¿bKFÅÌJH≠ia¿  %m∂Ç°≠ëËhajih¿  ò6ÄâíÆ˛âq¿  à6êà¿  Çf¿  Ây∂x”Ω®ì¨á%ü≥≠%i∂à≠ò≥Ω	xhêw¿yh¿  e\˛≠%w∂®ìi√i≥i”`∆ ≤¡,¿  %î≥}
+≠V'a àQäVhhfúV%â∏›
+±‘∞Î ¡ˇe}∏Xye≠¿  %c∂≠ëæXQZyR' BE(¿  ¿  Âp∂àaaπä¶I√I≥I”¿  %¡≠-∏q%ˇ›Õ®sΩe2¥∆  e^∂í% ≠»±Ωài¿à¿âi¿  •Q˛≠el∂Ω®ì%í≥xÇ(®Ò¬∏≤«8®ó%n≥&∆¡ˇ≠eZ∂x≠àgí∏öàâgÇG(¿  ¿  %h∂πˇ   6Å ¶2&Â{∏±ü"•è†⁄ ∞Î Ò |˜¡ú"a ¿  %o∏ÜT   1à‡BJÉXwïÜO ¿b®5KVâq¿  %7≤°≠•ˇ+≠%ˇë}ZY≠•Q∂àqàí(2wrh2rh/rh0P• Jsía¿  %_∂òq≠	eÖ∏à¢(3åäeí¥àrh3¢(5å⁄¿  %ë¥Jsàrh5¢(6å⁄¿  Âè¥Jsàrh6¢(4å⁄¿  •é¥Jsàrh4¢(Í ¿  eç¥@sÄàyx¢(Í ¿  %å¥@sÄày(¢(	˙ ¿  •Ü≥@sÄÇ' yò¢(8åÍ¿  %Ö≥Jsàr† rh8Ä® ¿  %2ØJ3≠I¿  •C∂ACj42¨ú2*#1?‡"*#®"Âˆ ë;`iÄ"F¿  ≠¿  ÂO∂-  6° Yayq¶2&¿  %c∏"•5›
+±;Ì|ÛÒh¡9)¿  •V∏Üí   Ç†Ä7(%•`∏±2"•6†⁄ ∞Î Ò^|Û¡])¿  ÂS∏Üá   G((TÂ]∏±'"•7†⁄ ∞Î ÒS|Û¡S)¿  %Q∏Ü|   ßgÇ´ˇÄáâq‡RÅPxÄYQXVu≤° ¢†¡H¿  e@Øù
+©‹™¿  %X∏±›
+Ì|Û¡AeL∏Üi   )
+Ω<YIRY
+¿  ía¿  %Ù≥ÕΩ›òAË¢i3¢.3¿  %¥Ω<ÿŸA¿  •Ò≥Ω<ÿAò¢m5ôA¿  e≥òA¢i6òôA¿  •"¥òA»¢i4…A¿  e!¥´»Aòàa©|≠âRi:Ri;Ri<RY|RI˙¿  Yi¿  eÔ˛úÊÕÀà®aâA¿  •Í≥àAX©(x%y¿  F R' be+≠rE(rE‰¿  i≈iµi’¿  •-≥©ï¶#Ω≠Q¬ÔàQä5X¿  %,≥8¢e8Bc7¿  ∆    A∫ÔR!P4Ä8bc8bc7≠A˜ÔXHbc?Y°¿RI±¿  Â˛≠A∞ÔZDHa≠ÔàQä6¿  X4aÌÔ`U»ÀÏ1€Ô¿  Y4ÿq±ÈÔ¿  9D¿  •ˇ=
+Ïä∆  %?∏±≠Ô›
+Ì|Û¡·Ôe3∏Ü ≤¡( ¢ eYˇ†: z ≠ e¿ˇ-  6A Ê2ëëÔ‡"*)òêÇìÄÄt-  6A Ê2ÅâÔ‡"*((å2b?¿    6A !ãÔ6a íØˇêÇ0í°˛ @ ô°ÅüÔ • @ÄÄëÄâ í†ˇ @êêë†âìË,•4∏!æÔ†⁄ ±∫ÔÌ)"†¡Ò∂Ô¡∏Ô"a ¿  Â'∏"°∆    ÅëÔ‡" (ÄÇ" !+Ô (Äë+Ô'9≤°?—ÆÔ¡ÆÔ°ÆÔ•Q¿  ò"¢  ô ¿  ô¿   6a íØˇêÇ0í°˛ @ ô°ÅxÔ • @ÄÄëÄâ í†ˇ @êêë†âìË,Â*∏!óÔ†⁄ ±ìÔÌ)"†∫ÒñÔ¡ëÔ"a ¿  %∏"°∆    ÅjÔ‡" (ÄÇ" !Ô (ÄëÔ'9≤°4—ãÔ¡ãÔ°áÔÂG¿  ò"≠ˇ ô¿  ô¿   6a íØˇêÇ0í°˛ @ ô°ÅQÔ • @ÄÄëÄâ í†ˇ @êêë†âìË+%!∏!pÔ†⁄ ±lÔÌ)"†»ÒrÔ¡jÔ"a ¿  e∏"°   °nÔ˘ÅmÔäÇ‡à®
+∏
+') @ )°ë⁄Óöò°ŸÓ¿  )´ó:<¿  ∆	   ¿  ò€ @ *°¢Ø   t†ô ô ¿  ô€¿     —YÔ≤°R¡YÔ°PÔ%:"° ¿  )¿  6a |˘êÇ0i @ ô°ÅÔ • @ÄÄëÄâ 9 @êêë†âìË*%∏!IÔ›
+±8ÔÌ)"†œÒCÔ¡6Ô"a ¿  e∏"°∆   ë:Ô¯ò	®	'( @ à°¿  âö¿  Ü  ¿  à  @ ô°≤Ø êêt∞àêà ¿  â ≠Õ≤° ¿  ÅÔ‡ 6a |˘êÇ0í°˛ @ ô°ÅÒÓ • @ÄÄëÄâ í†ˇ @êêë†âìË&e	∏!Ô›
+±ÔÌ)L¢ÒÔ¡
+Ô)¿  •¸∑"°∆ ,x‡2'®∆ ÅÔ:àH÷TÜ   —Ô<[¡Ô°Ô e&¿  "# Ç° Ä" @§ ¿  "c ¿  ÂÌµ
+ AÔ@§ •›µ!–Ó0"Ä2" !kÓ*#ÅkÓ'8¬ÜÎˇ ¢ eÙ "† ê     6a |˘êÇ0í°˛ @ ô°ÅΩÓ • @ÄÄëÄâ í†ˇ @êêë†âìË&e¸∑!‹Ó›
+±ÿÓÌ)\“ÒÎÓ¡÷Ó)¿  •Ô∑"°∆ ,x‡2'®∆ ÅﬂÓ:àH÷TÜ   —·ÓL¡‡Ó°ŒÓ e¿  "# ÇÆˇÄ"@§ ¿  "c ¿  Â‡µ
+ A“Ó@§ •–µ!úÓ0"Ä2" !7Ó*#Å7Ó'8¬ÜÎˇ ¢ eÒ "† ê     6a íØˇêÇ0í°˛ @ ô°ÅâÓ • @ÄÄëÄâ í†ˇ @êêë†âìË)%Ô∑!®Ó†⁄ ±§ÓÌ)"†pÒπÓ¡¢Ó"a ¿  e‚∑"°∆ ,x‡2'®∆ Å™Ó:àH÷TÜ   —®Ó\{¡≠Ó°ôÓ %¿  "# Ç†ÄÄ" @§ ¿  "c ¿  •”µ
+ AùÓ@§ e√µ!gÓ0"Ä2" !Ó*#ÅÓ'8¬ÜÎˇ ¢ •Ó "† ê     6a íØˇêÇ0í°˛ @ ô°ÅTÓ • @ÄÄëÄâ í†ˇ @êêë†âìË)Â·∑!sÓ†⁄ ±oÓÌ)"†ÉÒÜÓ¡mÓ"a ¿  %’∑"°∆ ,x‡2'®∆ ÅuÓ:àH÷TÜ  —wÓ≤†b¡zÓ°dÓ Â˛
+¿  "# ÇØÄ"@§ ¿  "c ¿  e∆µ
+ AhÓ@§ %∂µ!2Ó0"Ä2" !ÕÌ*#ÅÕÌ'8¬FÎˇ ¢ eÎ "† ê     6a |˘êÇ0i @ ô°Å Ó • @ÄÄëÄâ 9 @êêë†âìË*Â‘∑!LÓ›
+±;ÓÌ)"†ÂÒTÓ¡9Ó"a ¿  %»∑"°F!   Å=ÓààºÛÛ'# @ #°¿  )(¿    ¿  8X @ )°íØ   tê3 3 ¿  9X¿  F ˘') @ )°¿  )8-¿  ∆ ¿  òh @ *°¢Ø   t†ô ô ¿  ôh-¿     6a íØˇêÇ0í°˛ @ ô°ÅÊÌ • @ÄÄëÄâ í†ˇ @êêë†âìË+e∆∑!Ó†⁄ ±ÓÌ)"†ÒÒÓ¡ˇÌ"a ¿  •π∑"°Ü   ∂C*•√∑!Ó†⁄ ¢†±ıÌÌ)"†ÚÒÓ¡ÛÌ"a ¿  •∂∑"°Ü  ¢ &#$&31&%€ˇ ¢ e≥ˇ"† ∆
+ ÂÃˇ≠•øˇÜ    ÂÀˇ≠•±ˇÜ    %ÿˇ ¢ •Ωˇ"† ê  6a |¯°¥ÌÄ≤0Ç°˛ @ à° @††ë,	¬†ˇêí†à  @¿¿ëêåìË(%π∑!–Ì›
+±ÃÌÌ)"°ÒËÌ¡ Ì"a ¿  e¨∑"°∆( Ç† @ à°B† @@@ë†à êÑì$@CË¥e¥∑±ªÌ›
+˝Ì¡ÿÌ"°e®∑Ü   ≠c•zˇÜ  ÂÉˇ ¢ d eöˇ∆   •åˇÅ∑ÌB†@3Ç( í( ú≥"¬ ‡"*ô¿  8)@C ¿  I)¿   Ç¬ ‡àäâ¿  H(|≤ D-¿  I(¿   6A 2† '≥—“Ì¡“Ì°“Ì•Ã
+ÂÄµA—Ì≠ÂÖµ1–Ì*ÉÇ V»R†°∞Ì'5R†W≤R¬Ï°´Ìˆ%°´ÌeÿÆf≤Ü» R†'µF! fÇ∆ Ç†'89fBÜƒ ˆRf"∆√ ∂2ƒ Ç†fF4 ∆2  çfb∆8 Å≠Ì∂rÜ6 Å/Ì5  f¢Fª ≈'5Å§Ìfí∆/ •Å†Ì'µ- Å†ÌÜ+ ÂÇ¢ Wí∆( Ç§ 'µÜ& Å!Ì%  âóí∆Æ '90IóíÆ '9%ÅèÌWuÅåÌ'5oLÜ ióíÜ¢ ÅÌ'9dç∆ ’Wí∆£ '5•Wí£ W≤Ü£ µÇ£…W>Ü ıWíà W≤∆á H&¬ÅÈÏ’'5uW≤R¬Ïˆ%Ü ,'5Q`ÌÜ Q^Ì   Q^ÌÄ™ Ÿ¿  ©'9uW≤R¬Ï∂%Ü3 ¿   ,°UÌ'µ0 °UÌÜ. QRÌP• •¡ÆÇ†á'8Ç†áF háxá	 ÇØø∆  ÇØﬂ   ÅGÌF   ÇØ |∏Q@ÌÄ™ ÉÄÇ ¿  ¢e Ç»*#ÇB ¿  ¿  •`µ≠euµ|U∆  lµF  leP™Q3ÌFÒˇÅŒÏFÓˇl¯Ìˇ ÇØﬂFÎˇ  Å3ÌFÈˇ  Å2ÌFÁˇ|ÿÊˇ Ç≠ˇF‰ˇ   °#Ì’%∂ÆW√'5f&b√ˆr/&"√ˆ2Å)Ì‚ˆfÜŸˇ4    ÇØfBF÷ˇÅ Ì∂R‘ˇÅÌÜ“ˇïWô'5&rõÅØÏfÇÜÕˇÜ' µÅÌWí ˇÇÆˇ'µ∆«ˇÅÌF∆ˇEWíQÌ∆ªˇ'5;f≤∆Ÿˇ'5ÂWíÿˇıÇ´ˇWíFªˇF %ÅˇÏWí∆∑ˇÅ¸Ï'µÜµˇÇØø¥ˇ uWíQÛÏØˇ '5UWíQÏFßˇeWíFßˇF ıWí≥ˇf¬≥ˇÂWíF≤ˇQÊÏ•ˇ(∆ˇÜ~ˇ (Ü~ˇÅfÏ}ˇÇ†ÄÜ{ˇ,Fzˇ  ÅÔÏFxˇ  Ç° Fvˇ  Å‰ÏFtˇ  ÅÁÏFtˇ  ÅZÏFrˇ  ÅÊÏFpˇ  ÅÂÏFnˇ  Ç§Flˇ  6A ,'≥—‡ÏÀ¡ÂÏ°‡Ï%ê
+%Dµ1ﬁÏ≠%Iµë›Ï*ôÇ	 àÄÄtÇI ¿  V®*ÿ°∫Ï'8xá≤Ç¬Ï°∂Ïˆ(°∂Ï¿  %õÆf≤Ω Ç†'∏Ü  fÇª Ç†'87fB∫ ˆRf"∆π ∂2F∫ ÇØ˚f4 Ü2 l¯fbF9 Å≠Ï∂r7 Å¨ÏÜ5 f¢≤ »'8Å•ÏfíÜ0 ©Å°Ï'π∆- Å°ÏF, ÈÇ≠ˇóíÜ) Ç´ˇ'πF' Å0Ï∆% âóí∆§ '91Ióí§ '9)ÅêÏóyÅçÏ'9sÇØøF ióí∆ò Å%Ï'9gl¯Ü ŸóíÜô '9©óí∆ò ó≤Fô πÇ¨6óA∆  ˘óí∆| ó≤∆| |∏&¬ÅÏŸ'9yó≤í¬Ïˆ)  ,	'9ëjÏ∆  ëhÏ   ëhÏÄä⁄¿  â	':xá≤Ç¬Ï°cÏˆ(¿  F ,°_Ï'8°`ÏÜ  °]ÏeÑÆÿáí∆I '8pfbI ˆr/f"FH ˆ2fF2 ∆/    Ç†ÄfB8 ÅÂÎ∂R∆5 Å_ÏF4 òáí∆> '8frÜ> ÅÃÎfÇ∆- ∆! πÅRÏóíF* Ç° 'π( ÅNÏÜ&  HáíÜ; '80f≤2 '8ËáíF0 ˘Ç§ ós∆ )Å@ÏóhÅ=Ï'9bLF xáí∆- '8XáíÜ, iÅ4ÏóBÜ ¯áí∆  &¬ËáíÜ ù
+ HÄö €';{∑≤"¬Ï∂"
+F ,'; !ÏF !ÏÄö ¿  íb ¿  %µ0£ Â+µÅ©Î∆˜ˇÜˆˇ ,ıˇÅäÎÜÛˇ ÅÏ∆Òˇ  ÅÏ∆Ôˇ(ÜÓˇ Ç¢ ∆Ïˇ)Ü   †ô !ÏÍˇL	∆ í†ÄF  ,	êö F‚ˇ|ÿFãˇ |Ë∆âˇ|ÿFäˇ  ÅîÎFàˇ  ÇØFÜˇ  ÇØﬂFÑˇ  Å˙ÎFÇˇ  ÇÆˇFÄˇÅÓÎ∆~ˇÅÚÎFˇ  ÅáÎF}ˇ  ÅÏF{ˇ  ÅÏFyˇ  Ç´˘Fwˇ  6A 2† '≥—ÙÎ,{¡˚Î°ÙÎ%U
+e	µAÛÎ”@§ %µ°ÿÎ'3s7≤2¬Ï°”Îˆ#°“Î”•aÆ7íFi '3ifbFi ˆr)f"∆h ˆ2RfÜ3 Ü0 fBFh ∂Ri 1ŒÎÅ÷ÎÜ7 ì7íÜg '3frÜg 1[ÎÅBÎfÇF0 F# ≥7íÜd '≥Fe 1ºÎÅ≈Î∆) C7í∆l '36f≤a '3„7íÜ_ ˘2´ˇÇ§ ó~Ü #7í∆\ '≥Ü] 2ØøLF s7íF^ '3S7í∆] i1†ÎÅ©ÎóG∆  Û7í∆. &¬„7í∆- ù
+|ÛÜ HÄö |≥€';|±êÎ«≤¬¬Ï∂,Ü ,';±åÎF ±âÎÄö ÿ¿  ô'8xá≤Ç¬Ï°ÉÎˆ(¿   ,°Î'8°ÄÎF    °|Î%LÆÿ'8xá≤"¬ÏÅwÎˆ"∆    ,	ÅsÎ'9ÅtÎF    ÅpÎ0™¿  ¢h ¿  •Ì¥@§ eµ |”)∆  |„†ô ⁄ˇ1ÎÅ˛ÍFŸˇlÛÜ◊ˇ2Øﬂ,Ü’ˇ1jÎÅﬁÍF”ˇ  2ØÇ†ÄÜ–ˇ1cÎÅÒÍFŒˇ  1_ÎÅhÎÜÀˇ1]ÎÅgÎF…ˇ  1XÎÅaÎÜ∆ˇ2ÆˇÇ° Fƒˇ|”(Ü¬ˇ2≠ˇÇ¢ F¿ˇ  1NÎÅWÎÜΩˇ1JÎÅTÎFªˇ  2ØøL	F 2Øí†Ä 2Øﬂ,	êö ±>ÎÜ¥ˇ 6a ,s'#k1'Î‡"*#8÷≥∆  Ç( 1éÍ08Ä°çÍ7:≤†≤—QÎ¡QÎ°QÎ%*
+¿  80ô ¿  ô≠¿  %Ú¥F !JÎ ¢ Â·¥–Éë|Í0à¿–àÄâÄí(Vô˙FÙˇ  %∑!EÎ†⁄ ¢†±AÎÌ)"†sÒ=Î¡>Î)¿  e˜∂"°   6a ,s'#s1ˇÍ‡"*#8÷3∆  Ç( 1fÍ08Ä°eÍ7:≤†æ—1Î¡1Î°)Î% 
+¿  ®|Ûê30†3¿  9≠¿  ÂÁ¥    ! Î ¢ e◊¥–ÉëRÍ0à¿–àÄâÄí(V˙ÜÛˇ  •˘∂!Î†⁄ ¢†±ÎÌ)"†}ÒÎ¡Î)¿  ÂÏ∂"°   6a ,s'#k1’Í‡"*#8÷≥∆  Ç( 1<Í08Ä°;Í7:≤† —ˇÍ¡	Î°ˇÍ•
+¿  80ô ¿  ô≠¿  •›¥F !¯Í ¢ eÕ¥–Éë*Í0à¿–àÄâÄí(Vô˙FÙˇ  •Ô∂!ÛÍ†⁄ ¢†±ÔÍÌ)"†áÒÛÍ¡ÏÍ)¿  Â‚∂"°   6a ,s'#s1≠Í‡"*#8÷3∆ Ç( 1Í08Ä°Í7:≤†÷—ﬂÍ¡„Í°ÿÍÂ
+¿  ¢( |Ûê30†3¿  9≠¿  e”¥    !ŒÍ ¢ Â¬¥–Éë Í0à¿–àÄâÄí(V	˙ÜÛˇ  %Â∂!…Í†⁄ ¢†±≈ÍÌ)"†ëÒÀÍ¡¬Í)¿  eÿ∂"°   6A A«Í≠!≈Í¿  2" %Ω¥!ƒÍ"" ú≤Ç" á@§ eÀ¥®"à‡ ≠%ª¥(2V"˛@§ Â…¥!∫Í¿  2b ¿  ê    6A Q≥ÍP• •∏¥·¥Íb. åf≠e«¥ Å±Í`÷ `∂ ¢†.¿  i|¯a™Í¡¨Í¿  â¿  %óm
+≠eƒ¥¸
+ÂË∂m
+¨Z)≠9&I¿  e≥¥≠!úÍ896i¿  Â¡¥F    b°-6A ≤† ∞´ ej´ê   6Å1´È°îÍ¿  (¿  "a'¿  %ÕÆAêÍX'd ¢¡DÅóÍ‡ b††f±ÏÈ“Ø|⁄÷‚¡ Õ≠•≠´-
+aãÍVZHq1]Í:4aÇÍjdi19qg3; MP% qÄÍ¬† 0≥ ¢¡$¿  Â—ØÅzÍÄÄÙíáôX ÅwÍÄÄÙá/ ≤¡$¢¡D,Å{Í‡ <
+•·∂m
+*
+ò±®°ôFënÍ©6¢!††¿  ò	êîeÿ≤&¬'Ÿπ…&¢F%"F(¿  ú9
+iÄ™0††têëAVÈ˛Ã™"F%¿  ¿  ∆ åÀ°[Íòë†ô°+ÍßôÇF%¿  ¬†≤¡0¢∆¿  e+∞V• BfM¿  F òµô∂iµ]2√ h1g»ˇ¿  F  M
+%ø∂aHÍ†⁄ `Ê Ω¡FÍ"°%≥∂∆    eΩ∂a@Í†⁄ `Ê Ω¡?Í"°%±∂  Å3Í®ÅI¿  Âû´∆ åƒ≠2*%Ã∂0£ V3ˇ®Åeù´ °(ÍÂ∂ÆQ<È¿  B!'¿  87A∆    %∑∂¡+Í›
+˝ÌΩe´∂Ûˇ ≤¡D¢¡$Å'Í‡ ¬†¿≥Ä¢¡$%∞Ø†* Z¯FŸˇ e[ 6A V‚ —Í≤†j¡Í°Í%‘	82Ã£≠•√∂F   aÍ`¶ •™Æ2"√B†ˇXGÇ#áïàGí#óò®"åÍ≤√eÓØj 8≥92Vs˝`¶ ¿  Â™Æ2"É˙ B X≥9BY2-¿  6A QÒÈÇ% ¯ ÇØäí‹YäÉú∆   Â‘ˇö˛∆    ¢†e∏∂R% )
+)J9I*Y:¿  ÂÛˇ-
+   6A  ¢ @ƒ 0≥ e˙ˇ-
+å:(J%∑∂  6A ≠e∂∂  6A V‚ —‰È≤°(¡‰È°·ÈÂƒ	(B   6A V‚ —ﬂÈ≤°ø¡ﬂÈ°⁄È%√	®BÇ°7::ZìÇ°ó:2∏2∫≥Ç%®Ã¯Õ›Ω•Ú´ç
+F    !¡ÈÇ°"" 'ö
+P’ @ƒ e¨ç
+-6A V‚ —»È≤°‡¡…È°√ÈeΩ	òB¢°79PÉÄ¢°á9¬"› √Ω®•ÿ´-
+6A V‚ —∫È≤°Ú¡ºÈ°µÈÂπ	òB¢°79PÉÄ¢°á9¬"› √Ω®•È´-
+6A V‚ —¨È≤¢¡ØÈ°ßÈe∂	òB¢°79JÉ¢°á9@Ä¥‹0Ä¥¢°Ãò∏2Õ∫≥®eØ´-
+   6A V‚ —õÈ≤¢%¡üÈ°ñÈ%≤	í"¢°795@ÉÄ¢°á9,ÅÑÈ¢°òàáôÌ›®2Õ™30 Ù*¥°íÈ†£%j´ÃJ8*#)-
+¿   6a V‚ —ÑÈ≤°ï¡äÈ°Èe¨	òBb°79OPÉÄb°á9Fb%¢" ‹›Ω»2 √e«´m
+Ü   ÅgÈb°Ç( áö ÀÒã·ÕΩ≠•Ùˇm
+Ã ∏!Õ≠%äØ®1Âh´-   6A ÅpÈB† '∏'ÂiÇ*á22†òJöàá≤=0@t  :27∏- @t-6A °cÈ™¢ÅcÈß8|Ú∆  ÅaÈ'(°`È™¢ÅYËää†®£††1F ††1¢ @Ç†ˇß8‘Â)´&˙Œ††t ™  Ù *    6A ®ÃzÅ6È®©åö¿  e˛'ö!MÈ6A Ω≠Â{´-
+6Å B°GÈK±âq)Q"A¿  ââ!â1âAâa¿  %ö∂-
+Vj1>È≠•Ö´-
+¸öA<ÈòSàáπ'"°Å:Èà¨XÂs∂Ω
+Ë‡ÍAÿS–⁄A¡6È°6ÈÅ6È‡  AÈÇc2d ¿     6A °*È•  -
+   6A Å-È	≠-	±*Èôô(ô8∏ë)Èπô*â:¿     6A J%?≤Å$È©Ã˙\õ—"È¡#È°#È¿  •ç	  6A ÅÈ≤Øˇ¢( •y≤ê    6A ÅÈ®•7≤   6A 0≥  ¢ %‰ˇÃ%o∂   6A Â˘ˇ6A ≠%˘  6A AÈ®Vö¢† %7≤©¸∫¿   H-
+§ÕΩ@§  e≤ "°Ü ®å™ÕΩ Â≤≠ e¨|˚ eS≤ ÂQ  ≤  •f ÜÎˇ   6A °Ëe¯ˇ-
+   6A ¢"¨⁄à
+òåhô¿  F  ô‚åiâ	¿  F  âÚ2"32b¿  •Ì®‚V
+˝8¢¨ìB√¸à(ÄÇÄ–(Ä"¿‡" #Ä'"¬¨¢¬D%l 'ìÛ≠%‹6¡ A∑Ám¿  8B†ˇxB¿  9ÒWó¿  Ü$ RaÚ¡‚¡›LåI≤†ˇ≠I¿  e› =
+Vj ±¬Ë•Ì-
+9
+≤¡$¢ 9¿  Â∫Ø¢2B¢B¿  í9íB¿  í8íB¿  òå))òôYò)Ã	)ò&ô®a"™"ô&)a¿  ∆ﬁˇ xV'˜∆Ÿˇ"°QäÁ¿  HÒ¿  87ÂÚ6!9a1ÉÁ¿  HhB¿  Ba;FB¡4Ba)°"†ˇÚ¡,‚¡()L,≤†ˇ≠)¿  Â– V∫
+B¡L≠Xa,≤¡,8ÂJØΩB¡l,≠%JØ¢†¨Ω,™eIØ≤†¨¢†Ãª,™eHØ≤†Ã¢†åª,™eGØ≤†å¢†¨,ª™eFØ≤†¨¢†Ã,ª™•EØ≥RÃÙrœ¢†‘@ƒ ≤√™ÄÂ†Ø‹*íWô¢ß7í™ôó'8VS˝Ü X°B.ZDI°¿  ∆ÕˇhV∂Ú∆ ‚/˝≠“!¬-≤,%Ë ÜÙˇ  AAÁ¿  2!;¿  ('•‡ 6¡ @‘ A:Á0√ ¢¬¿  2$ ∏"¿  9Ò¿  •S=
+åöBb¿  j ®‚ÃöB¬DÉÜ  8
+HåcI¿  F  I‚åd9¿  Ü  2b2"2√ˇ2b¿  eƒ¢"V⁄¸∆Ôˇ bd Bƒ2√ˇV3ˇB†ˇhB7ñC2"|‰0DpD 2"≤¡≠Å)ÁÄ3Å.ËÄ3 2bBbrbiAiQia¿  Â‘ˇ=
+gö2 F.  9AÚ¡‚¡›IΩ≠I¿  Â≥ }
+V
+	 ±ËÂ√]
+zy
+¬†≤¡$¢ y¿  %ëØ¢rE¿  &≤†s—Ë¡Ë°Ë¿  ÂG	í4íE¿  òÚå)YòÚô9ò‚YÚV) Rbí"ôíb≤∞ÖA‡àäÇ¢( @ ô°ê™ ∏Aí∫ô¢hôA¿  Ü‘ˇ hV¶Ù∆¿ˇ bb2°¿    ¢ ≤¡%‘ˇ¢!Z(
+HåbI¿  F  IAåd)¿  F  )Q(a")a¿  eÆ®AV*˝F ¢b2°0# QƒÊ¿  B!¿  2% 7¿  %¡ 6A ¢"P’ @ƒ Ω•{ˇ-
+   6A ¢"P’ @ƒ Ω•}ˇ-
+   6A ®2ÕΩÂˇ-
+6A PÄ4¢°V» ¢"P’ ÕΩ%àˇ-
+   6A PÄ4¢°V» ¢"P’ ÕΩeoˇ-
+   6A Ç† ÇbÇbÅºÁ92âVS ¿  e∂  6A ≠%°  6A 1¥Á"# Vr¢†(±´ÁÂß-
+úzëØÁô
+ââ*â:âJâZâjâzâäâö)¿     6A (Brà"≠àÇ(‡ Ω•IØåZ(Vr˛6a b# 0£ b&‡ Ω
+≠•¸ˇ}
+V
+±êÁ¢†hÂ†m
+Ç°:y
+ÕΩy9*yJyZyjyzyäyöy™yÍy˙rjrj¿  • ˇç
+*∆ àráì?hà(åfâ&¿  F  âråhi¿  F  iÇ≠hífàë}Áàiíóò
+¿  eëÜ   ‡ Ü  à(Vx˚F 8Råi998BiRÃiB8b39b¿  ∆ `¶ Ça¿  Âúˇ≠%çà1F P≈ @¥ pß %¡ˇç
+-6a 0£ eTØM"°ß∏∆ Ω@§ ÂÏˇ'öfÀ±≠)1¿  Â[-
+V⁄81≠82#	‡ †‹AÕ∏1≠%Ïˇ-
+Ï
+àÑ81å9(ââ#àt9ÑÃ9t8î39î¿  ∆ ®1ú*8
+ADÁ2#GìeÉÜ  ‡ 6A àºH∏8åk9¿  Ü  2b Ä® í"ôå”πô"¿  %ÄçFıˇ≤bíb¿  %ê  6A ≠•˚ˇ  6A ≠%Zà"=
+º àò(ó:(;)©‡"*(©(‡ôöàÄ3	BB ¿  "0" )8¿   ±Á¢†ÄÂÅí°Z¬† ¬j í ≤†ˇÿ……*vàπ	Kô¿  Ü ©â
+âà©V( ¢b Ä≥@0t∞3 	à"àâ"9:)*¿  ∆ àV∏¸ÜÚˇ-	   6a ®@–tr†ˇ|ÙÃzÜ%  (	≠ò*ΩÌWôàF   ‡ãää¬7úÕ]BH¿  ¿  F  wú‡≈∆  ÕÌV<ªôV…¸àV˚ò
+åiâ¿  Ü  Çb Ë≤"ªôπ"â1Ÿ!¿  Âjà1ÿ!u¯
+   2"2√ˇô9"Ÿ!¿  Âhÿ!Ãıå›—÷Ê≤†f¡÷Ê°÷Ê%˜  6A ≠eCÅ”ÊÄ™»¨Ã‚Øò,¨	=vâ‡ãäå"ª72Í“à8ÄàAßòÃ}=»VL˝|Ú6A 2† ÇØˇíØ˛9¢¬D99"92âBíB¿  â‚âÚ2b¿  ÂU2b¿  6A àÚ7≤°ƒ—µÊ¡µÊ°µÊÂÌ®‚í†~JH|¯ê™câÚß¥(@îA‡ôöí@Ä4òià @êÄëÄÄf(IÚ¿   DGö÷ 6° 1yÂ¿  Ç# ¢"¿  Ça&
+≤¢”—üÊ¡üÊ°úÊ¿  •Á|ËÇbí¡Ç†và¢I ¿  ô|ÌåÇ≤¡|˙òBŸ1ÇA¿  ôA¿  ÅëÊ‡ ,À¡Ç"©°≠à∏"àX¿  ‡ åäâ2¿   ©‚Ç¬|˚âvâπÇ»†* ¿  Ç!¿  87¿  %e  6a Ç†}7∏—zÊ≤¢Ë¡zÊ°tÊ•›0îA‡ô004ê≤Ä3Ç†¬+ @ ®°|¯†à0¿à @ 4°08 B"M≠À¡9kH∏"≤À öªHT91¿  ‡ å*92-
+¿   6A ¢"Ç†}í* ≤"í)∑∏≤†–—]Ê¡]Ê°]ÊÂ’à"∞ªÇ»@,Õ∫∏‡	 åä92¿  Ü ∏‚,≠•Ùˇ‹jàÚ8‚f9Ú3Ç àÇR ¿  9‚-
+¿   6Å b†~G∂—HÊ≤¢˜¡HÊ°=ÊÂœG3—FÊ≤¢¯¡CÊ°9ÊÂŒÑmÄÑA7¶
+Ü&    B¬r†}I1g7ù|Ù=-	¿  ∆ —8Ê≤†/¡8Ê°8Ê%Àí†}pá g9Á`tA`ê4‡wpsÄô<∏g @ ¨°†§0∞™ @ ï°êö ôg}gvptAá'ò1‡∏∫âM¬¡Ú#≠ò#í… ∫π¯òà_ôq¿  ‡ Ãjf'¶í∆◊ˇ-
+6A ¢"Ç†}ò
+òI7∏≤†–—Ê¡Ê°ÊÂ¡∏"∞32√@,Õ∫≥‡	 -
+6¡ A”‰R†}¿  h¿  iÒ7µ,k—Ê¡Ê°Ê¿  %æ0îA‡ôöí0Ä4òià @êÄëÄÄb»˛∂&—˝Â≤°ç¡˝Â°ÎÂeª&(F8 ¬¡Ω≠•ˆˇm
+V¢¡ÂxÅÇ¬Dß1Õ≠ΩÂµˇÕ0≥  ¢ Âÿˇr m
+wR!UrR RR!¿  Vz¿  Ü( ≠0≥ •≤ˇÇäsg7&Gg•F‘ˇ¢!`™Ä¢ `îA‡ôöí`P4òiU @êPëPPf%
+R URR ¿  `Z¿b∆ˇPPÙ7¶ÃRR!¿  f¬† 0≥ ≠â1¿  %–ˇm
+à1∆  “† p« 0≥ ≠â1¿  %‹ˇm
+à1úVÜ ¬† 0≥  ¢ %Õˇm
+‹⁄sR"7ï
+Ä» 0≥ ≠eªˇ8‚w≥rb`& ¿  R!¿  2$ 7¿  %.  6° Aq‰]¿  (Hı¿  )±fÜ0 (3f0£ ¿  •ªˇVJHı"†}r√Db†~G≤
+
+F(  B gÙ@$A‡" %Ä@Ä4í"à @êÄëÄÄ&((ıGí≤°Â—ïÂ¡ïÂ°ÅÂÂ†DFÒˇ  À¡Ω≠%‹ˇVj»„À±≠•ëˇV™À±≠e∆ˇV
+"J"'∂≤°˙—{Â¡ÖÂ°qÂÂúD'4∆ﬂˇ@¥ ¬¡≠Â◊ˇÀ±≠%√ˇÃ DGíÊ∆ÿˇ   °wÂ†* Q9‰¿  B!¿  2% 7e  6∏2çù“À∞*É–öÉ ô !,‰00t@@t¿  »"Ä)Å"Ñ9QIq¿  ¬a)ëÃô™€–öÉêŸ ô ·^Â¿  Üu  í& ‚†}ó>Ï≤Ø2(0Is2†~(q∫Ú-*ì»Ë0<cÕP ì«bòQ∫π∞≠ÉäíA<¿  |ˇΩ¸¢¡DòÅ(qÈ!“A>íA?ÚaÚaÚaâ1“a"A=¿  ¿  %‘ÆΩ¬¡<à1¢»DÿA“AS¿  ¿  eîˇM
+Ë!à1ßæ∆Ÿˇ74Fÿˇ
+P¢É††ti°m}©±Ya¿   PE 75Üœˇ@îA‡ôêóÄ@ 4í)" @ê ë  Tf"÷ÕΩ≠•¡ˇ-
+å∆ `¶ •Œ ≤&∑Ω≠%√ˇ-
+Í˙Ì)7¿  Ü2 Ú¢œø††t∂*¢œﬂ†âÉå8íJY¢†ˇÇ!ß¢ á∆‹ˇí!9¬†ã∂≠	˘A¿  eæÆ¯AVöı¢ØàÅ™®å˙òq¢…æÃä¢á_–ˇ àqLäßò≤†ˇ¢∑Àˇòëß¢ó
+Ü«ˇàq¢†ˇß%òq˜ ¢ØàQòÅê(™"ÃB"!V“Ôh°I·Ò‰¿   h°ÌI¿    ÌL"h°'üﬁÜ˙ˇQ©„-¿  B!¿  87e˙ 6¡ pá q°„ÄÄt``tÚ¡‚¡¿  í' ›@¿t0∞t≠âi¿  ôÒâa¿  •ÿˇÃZ≠∏aÂØˇ†* ¿  Ç!¿  r' wÂÙ 6!h2|¥@FãD=@5É0@t1á„¿  x¿  raÃd+vpEÉÙB",≠¬¬H∏"⁄ªB$¿  ‡ ç
+VÍ1h2=R†~‚bvÖB0DA‡DJB0Ä4òdà @êÄëÄÄf(HÚf9ÚB DBR ¿  ¿   ÃòB!DBR!¿  3|‰GFå Ç†~Äx @TA‡UZR@`4Xef @PPëPPf5I‚¿  F DwVG˝H‚R†}GµÜ√ R†}∞D¢"Bƒ@M¬¡(h
+∏"∫¥H6‡ ç
+å*∆ò  H°∏‚&i∑µ,k—~‰¡Ä‰°‰ •\∞DA‡D@BÄ∞`4B$f†  ≠ @@@ë•{ˇ@`ç
+å*Fá  H‚DI‚f&
+b fbR ¿  b!fbR!¿  G5∆‹ˇ¿   ‚†~‡;cª%pTA‡UZRp@4àeD @ÄÄëÄÄò¬¡,Ω≠eêˇç
+å:Fn   b!¢¡,eù ßp∑ ≠Âëˇç
+j∆f b¬Dp« ≤¡,`¶ eCˇ†ä å:a   †∫ ¬¡,`¶ Ça¿  eXˇ¬-≤Ãø∞∞tàq∂+¬Ãﬂ¿ãÉÄÄt¯Ç.ägg∑JXe @P@ë@@&$m MF
+   R†~WîÜ¥ˇ@TA‡UZR@∞4Xeª @PPëPP&%Fa Dgî“Ü  b«pG w∫†∫ ≠ÂÜˇÜ |Ùg∆   pG b«}7∂ÜºˇfÜQ R†ˇ¬-Ú¡L‚¡(“¡4≠≤,YYY°¿  Â™ˇ]
+V˙∏°G;∆E ≠•Åˇç
+⁄Y2¿  H |¥@f|ÑG> HÚr†}b¬DR†~G∑∆9 @tA‡wprÄ@Ä4r'à @ppëpp&'∆. ¬¡L@¥ ≠Âxˇç
+å*F  r!¢¡LÂÖ ß@¥  ¢ ezˇç
+Í∆ rNÃ◊≤¢µ—˘„¡˙„°‚„%9Õ≤¡L`¶ Â*ˇ†ä å™I2¿  ∆    rM¢«ø††t2N∂*r«ﬂpäÉÄptºßt:¥∑∑4WóF\ˇpÑA‡àÄÇÄp†4Ç(™ 
+@ÄÄëÄÄ&(@¥ ≠ÂqˇF  w∑ó ìöDDr†}G7∆≈ˇF  p∑  ¢ eoˇBØˇF•ˇÄ4cbˇQé‚-¿  B!¿  87•≥  6¡ Qá‚m¿  (¿  )Ò#@¥í¡%2f|Ú8π&Bfvà"I ¿  ô,¬¡(≠(2¿  ‡ -
+åö96¿  J  2!&( ¢¢ ±å„2f¿  eï†J ⁄2¢ ]:zÇ&0” Ä® @ƒ à∏&∫µà8‡ ç
+úJ)6≠â1¿  ÂÖà1-Ü4  çòf	'ò&	KàF  ò(&	ãàÜ ò8&	Àà Ç»áó’Ü á|96¿  Ü   Åú‚R’áïá≠•Ä86∆    8·å≤¡ |˙Åt„‡ ß|9q86¿  Ü 8qr†˝àÅB$96âFG∑KBF¿  |ƒG74
+|ÑGì¿  Ü |‰G&-Ü ≠•©ˇÜ    |96¿  F   "°F   "°F    !l„Q)‚¿  HÒ¿  87 eö 6A à2|⁄òó:Ç»å®àBâ¿  Ü  !_„  6A ò2Å]„f	2b-¿   6A 2"≠8¡_‚8s∏"‡ =
+åäâ2¿  Ü ÇØˇÇb¢¬DÇb2bâ2¿  Â˙˛-   6A 8R°H„C|82ù®3áö
+0£ e˙ˇV
+ò2à	òåxô¿  Ü   ô2åiâ	¿  F  âBàRàòâRå	9âôà9Ã9≠8"3∏í9"¿  %Ùˇ
+8í39í-
+¿   6· ÅÂ·¿  hYa¿  baì=xIrYÇÃáx2¸ó¿  Ü à"àF  çhXåvY¿    Y}åei¿  F  iXVó˝â"¿  ˇàRàF  çhXåfY¿  ∆  Y2}åei¿  F  iBXVß˝âR|˙Q	„hag5¶jZ–•P™¿‡™K™±ÿ‚¿   •h©q¨KjXaY
+UñU}≠¿   ÂˇUr«TfÏF XqxbYbÃ∑¿  Fƒ xbbbºßR«¸àhäÜ–hÄf¿‡fjgwñ≠¿   eVhb∆ b∆¨¢∆D Â‰˛wñF˜ˇ  ∂,Xa≈ZÑâaz¶ÕΩ¿   e√ˇm
+VZ2®b≤¡$p™Ä e€ˇ¨:hbzfàBåiâYà2iBWòi2hRfiR¿  ∆ R" b!	µ-≤¡(≠ •◊ˇ‹jò°ó∂hbzfò"ô®VöÜ    XVU˝hbzfòX iôâiáïbb h"fi"¿  F à©âåiàiÃËi¿  ∆ iiY©ô"Dr«TXaGhb¿   ˇ8"‹≠2b	¿   •÷ˇm
+∆í ®≤¡( ÂÕˇm
+å˙·°‚<¨—†‚±°‚ %ÓØX°|ÙUr†ˇ8Yí©°¬†ˇÚ¡,‚¡(yΩ≠y¿   ÂEˇÃ⁄H°R.JEI°¿  ÜÙˇx&e¬-w_|ÖB†ˇà7W˝“¡4‚/≠≤, efˇÃJ∆    ¬-xwì◊∆c w,|ÑR†ˇò7G˝“¡4‚/L≠≤, %cˇÃ:Ü   xwìŸxÃG8R∆<  87|ÑG
+∆7 87G∆5 8|‰X3GïJ0£  %√ˇVäHXådY¿  F  YåuI¿  Ü   IH"DXBI"å9IYH29BÃ928R2√2b ¢ ¿   e¬ˇ=
+V*	∏pß  Â%ˇM†Eì@@tåƒAP‚JJ@5ì00tV3≠ %ªˇVä8HåcI¿  F  Iåt9¿  Ü   9H"D8BI"åy9982yBÃy28R39R¿   xVßÒ∆¡ˇ !·0bÉ  b°Ü   b°Ü m
+F  m
+∆ ¨∆àaPX¿5PSÄ–5P3¿‡32√¨06Äg2√¨¢√D •≥˛F˚ˇ  ®q±Û· •0≠ •ÈLÑxGF•ˇÜòˇôôi¿  FYˇhbzfòV˘‘∆˘ˇQ…‡-¿  B!¿  87 eB 6A Õ≤† ÂÚ˝-
+¨jB
+%Ïî
+Qÿ·Ω Â2M
+¨
+Ω eÜ˛I¿  ∆	 "°F   !˛·F   "°F ≠Ω e$≠ eﬂ  6A  ≤ ¬†¢ØˇÅ‘·‡ ã≤¬†Å—·‡ ≤¬åÅŒ·‡ -
+6A Ω¬†|˙Å…·‡ ã≤Å«·‡ ;≤Åƒ·‡ -
+6A ≠%†¥  6A 1ﬁ·0£ ±€·% -
+‹™e^∞Å⁄·¢h ‹
+¢# "°¿  e Ü  "°6A eä¥±”·†⁄ ∞Î \ÇÒœ·¡–·%~¥  6A íVs¢†•ó¥†J Ã:ƒ 9¿   Ç# B†x8ˆ3Bäeï¥M
+™˝9fJ¿  eV∞©¿   ¢†eU∞¢d Ã∫≠¿  •î¥¥∆ I¿  F  d-  6A 1∞· B 0£ Â[≤àf	Ω@§ Âˆˇ-
+≠%j≤ 6A r8&LÛ≠•N™-
+&∫E(®f•J∞   “† –Õ Ω•*∞&—ö·≤¢a¡ô·°ö·eú¢# "† %ô∞≠eã¥  Ü   b  6A Aë·=≠eS≤!è·(åÇà7("VRˇ≠ea≤   6A V√—à·≤†É¡à·°à·•ñÇ"®â¿  •˚ˇåzàå8®‡  ¢ •Ñ¥"# V≤˝≠%Ñ¥6A  eÅ¥M
+¨ÍQu·≠eL≤±s·òå)à	àP• Çb "† â9ô$I¿  •Y≤Ü   ¬6A 1g·0£ ÂH≤ ¢ •Ùˇú˙!d·ò∏*ßô	π¿   ùà)ßò¯π)¿  •|¥≠•U≤"† ê  6A ≠%¡±ú*®
+åÍà
+á®*VZˇÜ   ®-
+6A  ¢ ÂÓˇö≤† ∞´ %æ±M
+‹⁄Ke}¥M
+Ã:¬Ü- ≤† —I·†  ∞´ e∫±òÈ≠	à	áíÜ$ ∆ à
+áíF  ®*V*ˇF 9¿  ∆  ßô(*)¿  F ù")ßí˜"*"i¿  eq¥  ¢†•n¥Í¯Ç$ "j 9Ãx¿  Ü  ç((VÇˇ∆ â*-©¿  ∆ )*©(¿  F "  V√˚F‚ˇ  V#¯Ü‚ˇV√˜∆·ˇ  6A %O´ÅΩﬂ©¿  6A °·ÅÀ‡‡ e^¥ 6A !· ¢ ÂA≥≠•Q≥≠eY≥!·(àå∏	íH¿  à(VHˇ¿     6a °·e/≤!· ¢ e>≥≠ÂH≥≠•U≥A·(XÃ%FR  !Æ‡2" #ÂP¥†∫ ¡ ·° ·Å¨‡‡ 8XÃï8    aÙ‡q™ﬂ2V®%©±1Ò‡†6É® %®±wö1Ó‡í" ÂK¥†∫ ®π1¿  eˇ∞›
+Ì¡È‡∏1°È‡Åï‡‡ X%V5˚∆Áˇ eI¥Ω
+—Â‡¡·‡°‰‡Åç‡‡ 8b†„eG¥=
+≠Â™±%˚∞Ì
+¡ÿ‡›Ω°€‡ÅÉ‡‡ &	]8∆Ùˇ   •Œ2$ 2C"" •C¥Ω
+¡À‡°–‡Åw‡‡ °«‡•-≤j%x™ÂH¥0Î0=H$Â@¥Ω
+¡¿‡›°∆‡Ål‡‡ ¢†de•™R†B† (0EÉ=úe>¥Ω
+¡∂‡›°Ω‡Åb‡‡ 0£ Â±™°∞‡Â'≤ê   6A a≠‡00t≠e≤q¶‡XVï
+eR¥©M
+V˙ ≠¿  Â$≤"°;   ¡´‡‚ P’ Pµ 
+2D¿  Y)¿  ÂÙ=
+å⁄¬†ﬁ·¢‡—£‡±£‡eeØäÂâ¸!é‡Ω≠¡ü‡•‚≤≠Â≥HΩ≠»1nﬂ0ÃÇ1oﬂ0Ã¢¿≈A•≥H=≠»Aî‡@ÃÇ0Ã¢¿≈AÂ≥≠•≥≠Â3≥∆ Ay‡@§ )2E¿  ¿  e≥≠•!≥≠(»!Wﬂ ÃÇQXﬂPÃ¢¿≈AÂ≥(=≠»!}‡ ÃÇPÃ¢¿≈Ae ≥≠Â≥≠%.≥≠Â≤   6A Ad‡@§ %≤1^‡b# Ã¶≠Â≤"°Ü:  VÇ •â±b# †* X¨ç≠òóíê:ÉF  mà(V®˛F   Àe<¥VZ    F	≠Â≤"°F& ≠%≤"°Ü#   ¢† ÂŸ∞ß¢†eŸ∞ßí0∆ ]à%Vàˇ©%¿  ∆ˆˇÜ  ≤†°J‡•g å⁄¬°1·I‡—I‡±C‡eMØå•∆ˇ≠Â≤Ü    )
+ÇJ¿  Y*©¿  Âˇ)
+ÇJ¿  i*¿  FÊˇÀÂ1¥V:˛⁄ˇ   6A !!‡ ¢ eÙ±1‡Ç# Ã®≠%≤"°F  Âx±2# Ç# »ÕòóíêºÉF  ›à(V®˛Ã≠≠Âˇ±"°  2M¿  åK¿  Âªˇ≠%˛±"† ê  6A Â¯ˇ  6A Å‡¿  íH ¿   6A q‡ 2 B§ R† f)fÂ∑≠@¥ ¢†%<Æß7&b∆ˇ=Ü  g⁄F   0£ %π≠Ω≠•9Æ*¸Âh 6° !˝ﬂ¢" eeÆÃ⁄—˙ﬂ≤†ç¡˙ﬂ°˙ﬂ%+•º≠1¯ﬂ91)!¿  %π≠=
+ã°•Ú≤ã°e≥¢¶@†≥¢¡ãﬁ†£Ç—ãﬁÅãﬁ‡ Õ
+ΩMã°ÂŸ≤ã°%≥≠eÙˇ•µ≠=
+ã°%Ô≤ã°Â˛≤°‰ﬂ†≥¢†£Ç¡|ﬁ—|ﬁÅ}ﬁ‡ Õ
+ΩMã°e÷≤ã°•≥¢¡eˆ≠≤¡ ¢††HqÂÿ≠'ö≤†ª—÷ﬂ¡“ﬂ°“ﬂ%! ¢ Â°™¢¡ %ﬂ≠†Í2††0∫¢0™Ç@ƒ ›Ågﬁ‡ †Í   6a 
+ÅŒﬂ‡ -
+"¬ıÅÀﬂ‡ ∂2¢ ıˆ:7aÛﬁ|Ú≠•*´}
+QÒﬁ≠%*´=
+Aﬁ@§ e)´pÇ0|◊pàqªﬂΩ
+pà 0¬0Är0F Å≥ﬂ|¸±≥ﬂq≥ﬂa‚ﬁQ‚ﬁA„ﬁ°≤ﬂπ…!â1¿  •%´!Úﬁ ⁄ ë≠ﬂ°≠ﬂ¿  Ÿ	¿  %$´ * ≠ë®ﬂ¿  )	¿  Â"´pöq‘ﬁ≠¿  ô¿  •!´à1Ää ≠¿  â¿  • ´0:!Õﬁ≠¿  9¿  e´»!†Ã ≠¿  ¬b ¿  %´∏∞∫ä¿  π¿  %@¸ 6A 1éﬂ¿  àÄ@‰Ä ÂGI "ØˇÄ"0 /VÇ ¢ ÅÑﬂ‡ fäF3 àß8$fZ∆1 ˆjfF5 &:OF fj∆- fz∆- Ü  &™9»ß8òáöF+ ∏áöF) Ü  ¯áö% f∫∆$ ÿáö∆" ≠"  F "ƒ¸∂2"ƒ˜¢†V2≠Ü 1dﬂ¿  )¿  ;  !aﬂc9¿  Ü7 !]ﬂS9¿  F4   !Zﬂs9¿  Ü0 !Vﬂì9¿  F- !Sﬂ£9¿  *  ZÜ ≠F ™  jÜ öF  z!Iﬂ©4¿  )¿  Ü !Cﬂ©¿  ∆ 
+Å>ﬂ‡ &äÅÇß2#fZÜ÷ˇˆj&ÿf:ÜœˇF  &jäfzÜ”ˇ f™F«ˇ¬ß2í'ö’ˇ≤'ö”ˇÚ'öF‘ˇf∫Üœˇ“'öÜÕˇ!'ﬂ9¿     6A  Î -¢†%† ¢ úLKÅ!ﬂ‡ 1ﬂ0£ V2eˇ™!ﬂ ™ ¿  ©¿  Ü %˛™"†? ™ ¿  ¢c ö¿  %õ  6A !ﬂ ¢ •¶±ÄÎÄçAﬂ‡àäÑ2† ≠¿  2h ¿  %¥±‡Î‡Ì7û›¡ﬂ≤§ ä%ÖÜ  —ﬂ0„ ≤§ ¢†¡ ﬂ•Éå⁄¬†q· ﬂ— ﬂ± ﬂeÙÆ  6A A˛ﬁ@§ Âü±∞É±¸ﬁ¢† ÄãÄâvâ%XÇ»V•–3†£Ä‡™™ª≠)¿  •¨±-  ¢ @§ •´±"°ê   6A AÍﬁ@§ Âö±∞É±Èﬁ¢† ÄãÄâvâ%XÇ»V•–3†£Ä‡™™ª≠)¿  •ß±-  ¢ @§ •¶±"°ê   6A @Î@M!’ﬁ∞4B¬ :D*#®"¬Z ‡
+ †5ÉGíÓ# •i 6A ¢°ˆ#Ω≠ÂÒˇ-
+6A ¢°ˆ#Ω≠•ıˇ-
+6A ¢†	•¸!¿ﬁ“†≠+¡öﬁea≤≠•û≤1ºﬁ≠Õ“†%á≤=Õ≠eÜ≤≠%ü≤≠e¥≤6A ∞Î∞Ω°±ﬁ•˘ˇ¢†Â†Î†≠¬†≤†Åûﬁ‡ Å´ﬁ	ô¿  •ÜåZÈÅ®ﬁôä¿  Â{ 6Å °§ﬁÇ† í* "A¿  Ça¿  Ç)ÄÄu&ËÛ“¡¬†≤¡¿  e   6A !òﬁ(¢ 
+"•˚ˇ"¬Ç¬ˇ¢ V
+ˇê    6A ¢ "¬•˘ˇ"¬Ç¬ˇ¢ V
+ˇê    6A ÉB†	 å5Äêt¢…0á4   ¢…W3•ˆˇ¿"V˛   6A 1}ﬁ Ø102≤02!†3¿‡£0™Ä0É :02¿Vx ,
+eÛˇ ¢»0††t•Úˇ¢√0††t%Úˇ6a ënﬁ≠Åmﬁ¯	Ë¡>ﬁòà˘ÈíaÇa¿  eI≤≠eÜ≤=¬ß–≠%o≤≠Âá≤≠%ù≤ã°ÂÑ≤ã°Âã≤ã°%ú≤  6A ëZﬁ¢I ¿  ëSﬁ)	¿  âA    6Q≥‹¿  2% ¿  2a¿  %˜ˇ1Mﬁ2 ”2† AFﬁaJﬁH@cÉ929"3iB9¿  Ü 8"ìLz1Cﬁ2√eÂˇ¢ V:ˇ¢" ÂÓˇ¢† 1>ﬁ2√Â„ˇ¢ V:ˇB"2ƒ¢ Ãj,ö18ﬁ∆ 3%‚ˇC¢ V*ˇ∆˘ˇ3 Â‡ˇ¢ Vˇ82ÃÉa/ﬁ⁄= ¢ ˙˛33ÂﬁˇC¢ V*ˇF˜ˇ 3Â›ˇ¢ VJˇ8BC ®r‡ M”0£ BƒÂ€ˇ2 VˇÂx™1ﬁ¢†S2√e⁄ˇ¢ V:ˇ2† ®b%·ˇAﬁ≠DÂÿˇ2 V#ˇã°a	ﬁA	ﬁòàhHô!â1iAIQ¿  %n≤ã°eu≤ã°•Ö≤¢¡%m≤¢¡et≤¢¡eÑ≤≤"0£ eã±¿  2!¿  ('ì∆C FB  A˝›≠eÑ≤VÍ›ÕΩ≠•+≤%/≠]
+≠•h≤°ˆ›†µ¢†•Ç¡c‹—c‹Åd‹‡ Õ
+=Ω≠%P≤≠Âh≤≠Â}≤•‹ˇ8RS ¢"‡ =⁄3%Õˇ¢ VJˇ⁄1Â›3%Ãˇ¢ VJˇ≤†A¢¡Â®¢2¡ÃZ=⁄ 3Â…ˇ¢ VJˇÜ˙ˇ   3Â»ˇ¢ VJˇ⁄fÂ«ˇ¢ VJˇ≠Â^≤≠Âe≤≠%v≤%¨©ÃÍ(&&"∆ ZÂß©!…›\*F    jÂ¶©˚ˇJe¶©˘ˇ   "¬%√ˇ¢ V:ˇ%: eˇ 6A !Ω›1Ω›72)02¿03A–300`Å∫›2√ä3ÄÎÄçòáYà‡ "¬¯7íÈ0Î0=!≤›:"¿  2B ¿    6a e[™•UÂ•%ƒe7 %5!©›®•m´1©›0£ ±ß›R" Âùaß›ΩH©≠¿  ÂúΩ©$≠"" ¿  Âõ©2¿  e÷˛å⁄≤°0—ú›¡ù›°ù›%Öe˚¸°ú›•.©eÒ¸eÈ¸Í —ô›≤°8¡î›°ï›%É±ñ›°ñ›ebÅñ›1â›á3 Ä#¿ "A‡"  `Aí›"¬¯@"Ä2√¸B#‡ 7íÛ"† ÂKˇ%Ôˇ¿  "A¿  "  tV"1w›¢†d¿  BA¿  R ¿  "  tP"¿  "A¿  R¿  "  tP"¿  "A¿  Åw›‡ ¿  "  t˚)≠!/›)¿  %A≤≠%H≤≠eX≤!k›¿  2B ¿  eäˇˇ  6° Ç† ÇaÇaâQâaâqâÅâëâ°â±@Î@M‡Ta_›ZÜ)„≠¿  %‹fZfˇˇ≠%€Ãtfjˇˇ    ¢ %⁄fz•â©GP&Ä9¿  F˛ˇ   ÂÆˇÅJ›‡ @Î@MÃîÂX±Ü    
+eX±fÏÂy™e;™: ¢ •‘Å@›Ääë?›êà A?›JHQ>›G5   A=›JHQ<›G5A}‹% Q:›êò¿Az‹ó5F! Q8›PàÄQ7›á5Ü  ¢ ±5›e– ¢ •œfZA2›@§ •.≤≠%9≤≠ÂE≤Ü    ¢ eÕ&jﬁ@Î@MBaDÀ±≠IAIqA&›2A,¿  Baì ¿  •/ ∆   Â* 1 ›¢¡2a)°¿  %ßˇ≠%»GäFﬂˇ∆‡ˇ6A ÅÍ‹Ç Vÿ  ¢ Ω% °›eîˇ0≥  ¢ Â1 ê    6A 1 ›] ¢ B#  ¥¿∞VìPµ Â˚ˇQ›≠%ëˇ'"®w"Ωe˙ˇ≠ÂèˇF  `∂ •˘ˇP• ÂéˇF  ®V™˛ 6A Âo©f
+•ø©%≥© 6A %∞ †Î†≠†âÉ≠e™öeh©°Ô‹Å3‹‡ Âº©   6a ±Ï‹\ª°e5¨ª°•û °È‹¬†ÄÂQ¸e© 6A (|  ™!„‹**Å„‹'8:" ¸°‚‹eÜˇ≠Âáˇ°‡‹•Öˇ¿  ®%áˇ1›‹0£ •Ñˇ¿  ¢"ÂÖˇ≠•Éˇ¿  ®"%Öˇ  6A °’‹0È%Çˇc°”‹•Åˇc°“‹%Åˇ'c5ác,Å∂‹® ™¿†(É≠%ä∞%⁄Ø-
+°…‹•~ˇ≠e~ˇ°»‹%~ˇF °∆‹e}ˇ7c°≈‹Â|ˇGc°ƒ‹e|ˇWc°√‹Â{ˇ6!±¡‹¬†`¢¡r¡p)12a¿  Â%¨2¡°ª‹eyˇ®!Â}ˇ°∫‹Âxˇ(1Q∫‹A∫‹°∑‹ •wˇjì®	í
+ ú)Âvˇ≠•vˇjí®%xˇ≠Âuˇb∆f∂‹2√"¬wì»%≠™*"!VÚ 81"#&RF Ü   (!fW81"#fbOP±@≤°û‹0≥eqˇ ¥°ô‹Âpˇ®!%uˇ°õ‹%pˇ°ö‹•oˇ≠eqˇ°ô‹%oˇ@§ •pˇ°ó‹enˇ≠Âoˇ°ï‹•mˇ≠eoˇ6A Ç",yá9‡®ëè‹™ôò	ô#ëé‹ô3úH¿   Åå‹â#Åâ‹â3¿   Åâ‹âC()c¿    6A Ç"fX))3!Å‹â)#¿  F   fh)))3!{‹)#¿  ∆ fx
+ ÂF©Ç"©ëv‹)3ô#Êàët‹‡®™ôò	ô#f)!q‹)C¿     6a “"¬†± ¢†dòBà2Ÿôâ!)1¿  •M© 6A ò0äÉ=°b‹P3¿  àâ†à0à ¿  ââ¿     6A ò¿  àâÄã±Y‹°X‹Ä´É0:¬Ä£¿  àY†¨A004¿3±S‹∞à†à ¿  âY¿  àY°O‹†à08 ¿  9Y¿  6a ò¿  àâÄã¿  òY¿  ô1¿  ò1°~⁄†ô¿ô¿  ®1†§5†ô ±=‹°;‹Ä´Éêä¬â¿   6A @@tàc0@@d D¿  òò°5‹†ô@I ¿  Iò¿  Hòë €êD ¿  Iò¿  F   ¿  HòëÒ⁄êD¿  Iòc¿  8àAÙ⁄@3 ¿  9à¿  ∆ ¿  8àA‰⁄@3¿  9à¿    6A ò00î`É°‹¿  2)†3Ä3 ¿  2i¿     6A ò00dÄÉ°‹¿  8ô†3Ä3 ¿  9ô¿   6a ®0∞0Ç@k–H¿  (ä0¥0Ü∞˚êÿ¿  )10ë0Y0ï†È¿  ∏10√¿,07Ä3ÅR⁄Äª`ª ¿  π1¿  ò1aN⁄`ôPô ¿  ô1¿  à1Q≠⁄Pà@à ¿  â1¿  »1A´⁄@Ã Ã ¿  …1¿  ∏1!™⁄ ªª ¿  π1¿  ò1!†⁄ ô‡ô ¿  ô1¿  à1!¢⁄ à–à ¿  â1¿  à1!Ÿ€ à08 ¿  91¿  (1¿  )ä¿    6A àã|¿  òà°œ€†ô ¢¢∂¿  ôà¿  òàêõê∫ì™ê¨ìù
+¡¡€¿ô¿  ®X¿™∞™ ¿  ©X¿  ®X±ª€∞™êö |Í¿  ôX¿  í(†ô|z¿  íh¿  í(†ôl˙¿  íh¿  í(†ô¿  íh¿  òà°l⁄†ô|⁄¿  ôà¿  òà†ô ¿  ôà¿  òà†ô |∫¿  ôà¿  í(†ô¢Øœ¿  íh¿  òà†ô
+†ô ¿  ôà¿  í(°ó€†ô¿  íh¿  òò°X⁄†ô¿  ôò¿  òà°Q⁄†ô¿  ôà¿     6A ≠•nà00t0™Ç††Ù¿  (à∑Ú–™††Ù {™†£A¨˙¿  8ò††dÄ™!Ä€ 3†£ ¿  ©ò¿  (ò1õ⁄0" ¿  )ò¿  F   ¿  (ò1éŸ0"¿  )ò¿     6A ëèŸàóò ¿  òà°ºŸ†ô ¿  ôà¿  òà°*⁄†ô¿  íh¿     6a òÅÅŸ±c€áÅÇŸ±a€á±a€¿  àyÄÄt¿  ¢)¿  ©1‹8¿  ¢!†¢§¿  Ç!Äç§á¿  à¿  ÜÚˇ   6A à¨Û00t¿3¿  í(°N€†ô09 í° ¿  2h¿  8àê3 ¿  9à¿  ∆ ¿  8àíÆˇê3¿  9à¿     6A ∏¿  í+êÄuí†ÄÄô¿êêÙó¥@êÙARŸô°RŸGASŸ°QŸG°QŸêÉÄ0à¿… và	í 3¿  ô
+¿   6a àò¶ACŸGF. Ü7   ¿  àyÄ∞t¿  Ç)¿  â1¿  à1Äç§¿  ®1†¢§á∫¿  ®1†≠§¿  à1ÄÇ§Ä™¿ç
+¿  ∆ ¿  ®1†≠§¿  à1ÄÇ§á∫Ç†Ä¿  ®1†≠§ä™¿  à1ÄÇ§Ä™¿ç
+∆ ª   ±!Ÿ©°€∑A"Ÿ°€G° €Ãx¿  F °˝⁄¿  ò
+íC ¿  =3àV∏˛¿   AŸG‹ÜÛˇ  °Ÿçπßôπ¿  F ¢†Ä±Ÿç
+©∑ô¶°Í⁄¿  Ìˇ6A ç!Ì⁄*(AÌ⁄'¥!Ì⁄*(A¨⁄'¥
+(VB-    ¬#¶<* "# ¢#Ë—ﬂ⁄‚ &—ﬁ⁄&"•¶≤—Ÿ⁄ïM–™Ú"¨µÉò3ô∫˘‡ü±ÿ⁄˙ô™[¿ô¯')êO1!Ÿ ô≤êñ!!Ÿ@ô¿Ú“Ú“ô“ê@tR™´-í˘8BHRHíH¿  ¿  H2˘X˘h˘x˘àÈŸ…(¿  IH˜ 39h¿  Ü   "°Ü ®CË∆’ˇ»¶<ÛÜ˙ˇ 6A ë∞⁄¢"óöë≥⁄ê3Äë≥⁄7πÇ† ÄÄt-6A 0≥  ¢ %˝ˇ†*    6a ¿  â1ÇÄÄ ò°ÿ¿  à1†àêà ¿  â1ÇÄÄò°PŸ¿  à1†àêà ¿  â1¿  à1ëô⁄êà ¿  â1ÇÄÄ`ò°ï⁄¿  à1†àêà ¿  â1Ç ÄÄ$Pò°è⁄¿  à1†àêà ¿  â1ÇÄÄ ò!â⁄¿  à1 àêà ¿  â1¿  à1!ÒŸ¿  Çb5¿     6A ëÏŸ  êÇ¢Ø¿  (˘†"Ä" ¿  )˘¿  6A ë„Ÿ¢†Ä¿  Ç)†à ¿  Çi¿     6a  ¢ "a¿  e‹´†j !j⁄(¢‡‚|ÛQh⁄Z~91=m}
+B% ¥2$,77EÇ√í† ÄöÉ¸yÇ††®!Õä¥¿  %x´Ïj0Ç ú¯w≥ò!,˙:âÇ ßòà17®-91¿      -KUgï® 6a ¢†ºBa¿  %à≤†J z	¡G⁄¢, ±G⁄º
+xÃ∑  òÃy}F }àKwßòÎ&äö}
+∆ ≠eÜ≤"°Ü  }
+ç
+ô¿  Ü  pá ‡àÄãÄ¢††Bh ™§&Ω¿  %ƒ´F  ¬†≤† •ã´∏1¬††@§ Ât´2d,Rd-rd.'y¿  F    "°  6A B",≤††@ƒ ∫≤≠•Œ´å⁄—⁄≤°4¡⁄°⁄•ç≠%«´!⁄ßJ# 6A ≠Â≈´Ω
+&/¯ß8*∂*Ç ,˘¢°óò∫íôí	 á‚† @‘ 0√ ≠%Óˇ   ¢°-
+6A ≠e‰ˇm
+Ã™#9|Ù¿  Ü+ 0≥ Âˆˇ2&†ö Ã£\É9|Ù¿  % àh›Õ¢&-êπ ‡ ]
+∆ P≈ @¥ ‡ †Z ñ5˚1ÚŸ≠eZ™L
+¡Ÿùvä2Ç	;ô à#f$$b&.J"*,≠2† 2B bBRB¿  ¿  ÂZ™∆
+  Bƒ0£ %Z™2&£˜HdΩ¢&-‡ F  ≠‡ √9|Ù-¿    6A <¯78^É:à1—Ÿä3Ç à#ñ∏ë«Ÿò	ó∏C‡àë≈Ÿäâàºhò2Ã©\É9|Ú¿  Ü
+ (b›Õ¢(-0≥ ‡	 -
+∆ ÕΩ≠‡	 -
+F ì9|Ú¿    6A <¯78_É:à1¥Ÿä3Ç à#ñ»ë™Ÿò	ó∏D‡àë®Ÿäâàºxò(2Ã©\É9|Ú¿  ∆
+ (b›Õ¢(-0≥ ‡	 -
+ ÕΩ≠‡	 -
+Ü  ì9|Ú¿   6A <¯78_É:à1óŸä3Ç à#ñ»ëçŸò	ó∏D‡àëãŸäâàºxò82Ã©\É9|Ú¿  ∆
+ (b›Õ¢(-0≥ ‡	 -
+ ÕΩ≠‡	 -
+Ü  ì9|Ú¿   6A <Ù7¥# A{ŸS:ejdÇ à#ñòëoŸò	ó∏q‡àëmŸäâàHòx¢Ã©\É9|Ú¿  ∆ (b†∫ ¢(-‡	 -
+F ‡	 †* aeŸ05Ä`¶ :4Â6™B ‹dAbŸÇ RBÇC RCBC¿  ≠¿  •8™    ì9|Ú¿   6A <¯78WÉ:à1QŸä3Ç à#ñHëGŸò	ó∏<‡àëEŸäâà¨¯òà¢Ã©\É9|Ú¿  ∆ (bΩ
+Õ¢(-‡	 -
+∆ Ω‡	 -
+F ì9|Ú¿   6A ≠•∞ˇ]
+Ã™#9|Ú¿  ∆ 0≥ %√ˇ2%	V√ \É9|Ú¿  ∆  (bΩ
+Õ¢%-‡ -
+Ü Ω‡ -
+  6A ≠•´ˇ]
+Ã™#9|Ú¿  Ü @§ e™ˇß2†2b |Ú¿  ∆  0≥ P• eºˇm
+Ω≠Âªˇ8•Ã£\É9|Ú¿   (bÕ
+Ω¢%-‡ -
+ Ω
+≠‡ -
+   6A ≠e§ˇM
+Ã™#9|Ú¿  F 0≥ Â∂ˇ2$V≥ \É9|Ú¿  F (bΩ
+¢$-‡ -
+∆    ‡ -
+6A ≠•üˇ]
+Ã™#9|Ú¿  Ü @§ eûˇß2†2b |Ú¿  ∆  0≥ P• e∞ˇm
+Ω≠ÂØˇ8≈Ã£\É9|Ú¿   (bÕ
+Ω¢%-‡ -
+ Ω
+≠‡ -
+   6a )!  t≠91Ã‚!ŒÿàëŒÿ‹H¿  Ü	 Õ–Ω %«≠F    ∏	Kôå´≤+$å[‡ F  àVà˛ 6a )!  t≠91Ã‚!ºÿàëºÿÃ¯¿  Ü Ω%¯≠Ü    »	Kôåº¬,%ålΩ‡  àVx˛ 6A Å∑ÿ‡" àÄ¢†ÄÇ( í( ¿  àyÄÄuÄä¿∂(Ò°≥÷Å≥÷ß!¥÷Å≤÷'Å≤÷00t¿  9¿     6a Å•ÿ‡"*à(®¿  àzÄ∞t¿  "*¿  )1¿  à1Äç§¿  ò1êí§áπ¿  à1Äç§¿  (1 "§ à¿¿     ¿  à1Äç§¿  (1 "§'∏"†Ä¿  à1Äç§*à¿  (1 "§ à¿ |Ú¨kF   |ÚúÿÅá÷!hÿáÅà÷!gÿá!fÿ¿  (=  t6A Â…˘•›Øí1yÿ0£ Â‹ØAwÿ»¶H	Qvÿ®Käh
+gí-∆ ∏∑í%Ü  †⁄ bÃˇ‡∂∞zÄxy¿  e≤©i¿    Äÿ ôKà≤»¸óú«r°≠ÂÊØ≤† ∞´ Â¿˘•¿˘*%¿˘•¡˘Â‰Ø≠e≤Ü     ¢  ≤ eæ˘ ≤ ÂΩ˘Ω*•Ω˘%ø˘e‚Ø}-  6Å "aÇ† "†“!ò )Ci!y1}âg©, ¿  %≤m
+ÏÍÜV ò @ Ü°≠wóàòóàòóà''„FÙˇ eµ˘V*ˇ"°FL  à!ùâ
+à®1¯©Ë»∏®ÿ9&I6YF˘VÈfŸv…Üπñ©¶vàrI ¿  ôr†váÇD ¿  DB†vÑrE ¿  R≈¿  •≤˘•∆ØÇ!¶dàVAÿ @ ï°≠Ωwáâ¬&«â¬&	«	Â≠˘Ç&''€B†  @ W°á≤¡≠%F˘‹:àqå¯àPX ®∏Y¿  • ˇD'§àVFÛˇ 1ÿ0£ eøØAÿr$ r«‡'ΩQˇ◊®ÂÚ±ç
+‹J≠ÂÃØ%©˘eÃØ≠ÂÚ±"°∆
+  *Ä"¬¸i≠Çe rd ¿  e Ø•¶˘Â…Øí!i	¿  Ü  "°6a °Ë◊ b •∏ØqÁ◊"' Ê
+°„◊%«Øê    `’AKΩã≠ @ ô°‡ª!ﬁ◊Ì‡äM	π1‡•ò™ô∏	{	&%ås&#]¿  F" <˘gπF  ®1™õòóx‡ùÕ®+∆ í†?g9h¢!†õÄò9ó]‡ùÕ®;öö¯	@ˇ ®∏˘	âŸ!È¿  •Ωˇàÿ!Ë    <˘g9,äõòó%‡ùÕ®Köö¯	@ˇ ®∏˘	âŸ!È¿  %∫ˇËÿ!àUòó•F‘ˇ∆»ˇ   6a ∂2"†	%Û"j "Øˇ¿  Ü∆ Ã∆A ¬†≤† 0£ ÂÊ™Å†◊‡íöàààh‹8âÇ êà ÇS ¿  ¿  Ü  fÇ í†êà ÇS ¿  ≤¡ ¢ ¿  Â1¯å*F-  Ç|…êàò1ÇS¿  &ú9&)&9¿  Ü êà ÇS¿  À±≠¿  e9¯å*∆  Ç!&f8Tí†Çêà ÇS¿  ≤¡≠¿  •?¯åÜ à1&(&8Ï®  Ç	êà ÇS¿  ¿  ∆ Ç<	êà ÇS¿  ¿  ∆ %„\Ç)
+¿  Ü     ¢ ≤¡%C¯-
+å⁄e·b)
+|Ú¿  Ü ≤í£ êõ à1°`◊íS¿  ßò∆Q á∫∆& í°,óòÜO á9Cí†nóò∆M á9<)óòFL Lπóò∆K VH¿  Fj í†ñóòÜH í†»óòÜG í†Üó∆8 ∆E  ëH◊óòÜD á9í§∞óò∆B íßóò∆A í¢Xó. @   ë’óòÜ> ë;◊óòÜ= ë:◊ó& <   ë\’óòÜ: á9Cë5◊óò∆8 á9ë’óò7 ë0◊óòF6 ë/◊óòcF5  ë.◊óò4 ë,◊óòF3 ë+◊óòGF2  ë*◊óò1 á9ë(◊óòF/ ëo÷óòF. ë$◊óòF-   ë"◊óò∆+ ë!◊óò+ ë ◊óò* íß êª ≤S¿  ¿  & ¯∆$  xF# 8" ∆   (F X h∆ HÜ ∏F ò ®∆ àÜ ÿF Ë  »Ü xF 8 ∆  (F  X∆
+  hF	 H ∏∆ òÜ
+°ˇ• F   1Óˇ](Ïí!–ˇà¢(‡
+ ©‹™8¢#¿  ‡
+ Ω
+°Êˇ• (®$(r
+ • ¨ä!ƒˇ8¢#‡
+ Ω
+°ﬂˇ•
+ 8®$8s‡ (¢% ""‡ ¢°-
+¿	¸?Ú˚?6A 1˝ˇ(CåB  !≥ˇ≤†∞´ Ç" àh‡ ©CV:˛(¢""°¿  ‡
+ Ω
+°Òˇ•   6!a … ¬ ≤†O¢¡›¿  àÌ˝¿  Ça9I!Ra¿  Â-
+¿  Ç!¿  hg%Ä˙  6° Hí¡0Ω	Õ›≠-)°9I!Y1iAyQôëâ±¿  e˘ˇ-
+6a \áí;§|ƒ@™à
+K™Ü/    Ä4…áπ∆$ ë≥Ã‡àäâà†   Ω≠•à∆    ± @§ %äÇ! ∆ Çí Äàêà Ü Çí Äàêà Äà#+§ íÇ ÄôÄô ÇK§ àêò ÇÄàêà F	 íÇ ÄôÄô Çã§ àêò ÇÄàêà Ü  Â–Æxí†pêíí…ê4É "#0àÄ÷" Ç( â-
+ 6a ¢Ç†ˇá†Ä$&(ˆ8LúË∆ &8å&H %ÃÆF  Õ∆   ¬†¿√Ç2"≤"›¿√¿ÂÌˇ(  6Å |¯PX0à2IAZX± ≠%x∏†Z ; ¢ Â¯ˇ¬¡ΩÂ|Í˝F  ≠-
+6A Ç†ˇ≠áFÇ†pÄÇ&»,á2
+ºX
+&∏3
+  &ÿ\'%<'∆ ÂÓ F    ÂÌ     eÎ ∆  %¡Æ
+-
+6A  ≤ 0£ Â˘ˇ†∫ ›Õ≠Â‚ˇ-
+6a 
+ß≠ÂÁ ¢d ≤ ¬√2†ˇ7“ƒ≠%¸ˇÕ
+Ü  ¢d" 2†ˇ"D¢Ã7± •jàääâ4F "† "d"
+ ± "D™Âhà-
+ääâD6· 
+©±©°&¢ Å)Ãë)Ãä¥π—G;-
+öUZRYÒÃEB!∂$  t"a"√˙Ç! IÉ@()·ú"∆–àbXÇ(í4 îìk  ≠ e€ ]
+Ã*FX  Ω
+Õ≠ %ÚˇÕ
+¢Ω¬a ÂÈˇ©!≤¡(≠ Â÷ (°M
+¬!V" B ˇ(A'<∆I ≤“¡$
+ eÏˇ≤Õ
+“¡ 
+ eÎˇ≤Õ
+“¡
+ eÍˇ≤¡ %Zàë(Õ
+ä"'¥»AÏˇàÅä"'¥©(qå"HJ"àaxHA"àäD¥òÇ∆ iÇ∆–àâ±Ç»∞àâ¡0Éêà0Ça≤¡ ≠ ÂV≤¡¢a %VÿÅ›¶"–Ω °  %‘ˇ à¡®¬¡,Ω eWÜ  ò¡ú…Ç!úxí!ú)∏¡»±≠ %÷ˇ∞™0 |˙–⁄0®1≤¡⁄™ •M®a†òì≠	††tåjF<  â·àq¯í!äIŸˇÇÜ< -M∆  ç)c#&)Â8ÒVò—∂)* 8±b∆–âfIvYÜ9¶)ñÜ%   7„8ÒÃ≥H—ˆ$fÜ   f∆!   ÷( •( ≠ eJ ÷ÕPµ pß Ça %’ˇ¢Ω %Õˇ©!¢Ω eÃˇ2∆–Ç!¢c	Õ+≠Ça e∂ Ç!;Õ≠ eµ Ω≠ %∏ rF  2∆	 bÜ    ¢ •F % Ç!9∆ ˇò·)ÒF»ˇ¬MF∆ˇ 6Å  ¢  ÂC "¬–àí®"hÇXbH2â! % ≠ %B  Â à
+ò»"»Pi"( ÕΩ
+ •»ˇb¬∞∏›Õ≠ ÂºˇåJ % ≠ •  eC  %C ≠ e»    6A !\À¿  (¿  6A ≠Â   6A r¢"   8J¢ 0Â◊ ≠∆˚ˇ≠eãÆ6A ÅOÀ°MÀíY ¢( %˙†*   6A 1HÀ!FÀÇ¨H®e˙-
+‹∫ä•ÖÆ-
+Ã• †∫ ¢# %˙V
+ˇ¢b ©  6A !:À±:ÀÇ†  ¢ ÇBÂ ˙í††âÉÇB  6A Å1Àíå9®Â˙  6A ≠ÂÅÆ  6A 0≥  ¢ •	 †*    6A ≠e    6A ≠%Æ  6A ‡  %sÆ ¢  e+  %rÆ e0 ≠& eµ  %Âˇ  6A !À¿  (¿  6A Â˛ˇe˚ˇ   6A ‡ Â˛ˇ   6A !
+À¿  (¿  6A Â˛ˇÂ˝ˇ   6A V ≠ etÆM
+‹  %ÁˇJ‡
+ ˘ˇ&e˙ˇ ¢ %" Â' -  6A eÍˇ"*Ç* "¬)ºàË»¡È òÿ æ—È Á;⁄ôö"V" ∂+)
+  "(  `)X"»0≠Â± ≠Â eÙˇ6A A‚ ≠ e”˘)$ ÂÂ©4-
+åj •jÆ©$à$Ãhâ4â  â))  ≠ ÂŸ˘≠ %£   6A °Õ •ÿ˘ 6A ÅÀ  ¢ Çb •! ê    6A  ¢ e˛ˇ≤† ¢ Â, 6A  ¢ 0≥ B†7Ç ,¢'
+%ìß†BÉ@@t-6A Gñ≤%¢"•¸ˇÇ†‹*®"Ì(
+›(ÇÕ0≥ ‡ ç
+-6Å ¬"í!≤%¿¨ ôQ…A•˘ˇç
+òQ»A¨ i	Iñs"!:f`r¿fp6É}99Ü |‚'ìC)9  ¢!ßñ≤'¿¨ ÇaôQÂÙˇàAòQåJI)  ®"Ç!(
+âô(r˝Ì›ÕΩ‡ ç
+-6A P’ @ƒ 0≥ ≠• Ã⁄®"›(
+Õ(bΩ‡ -
+  6A ¬ ¢ Â ≤" ¡s ò ´—r ∑:–ôÄêàÄÃòˆ*"¬–®2Â”ˇ%ÿˇ  6A Â»ˇÇ¬–"(·f í* ‡“Ä»ÿÒd '=˙Ã ªÃ∂-åI Â‘ˇâ
+Ü   »Xº÷L ¿ª¿πX∏ªπáôHâ
+ò®-	  6A e¡ˇÇ* 8“(·N ≤(ÍÕÒM ◊<	˙ª∫ôÃ∂,	F  òX÷© ôÏ9∏Hπ
+F í…ˇVÈ í(ô
+¢»0•ì ∆  ÷Y  eÃˇôX  6A ÅB  ¢ Çb •Ûê    6A  ¢ e˛ˇ≤† ¢ e
+ 6A  ¢ 0≥ B†7Ç ,¢'
+•pß†BÉ@@t-6A Ç!2!	""áñ∏≠e¸ˇåJI#  ≤% ¢ %˚ˇz iI)3  6A ≤#¢"e˘ˇö àâ5hIâ-
+   6A ∏®•˜ˇÃÍˆEàÕàXΩ≠‡ -
+6A ≠Âπˇ  6A Ä® í "ê∞d @ ª° ô#∞à {™ñi˛â   6A Ωù¢ +†∞d @ ª°  #∞à {ôΩñL˛˚ó;gj¢Øˇ @ ö°êà â6a \áí;§|ƒ@™à
+K™∆-    Ä4…áπ# ëÌ…‡àäâà†  Ω≠eˆˇÜ Ω≠e¯ˇà∆ Çí Äàêà Ü Çí Äàêà Äà#+§ íÇ ÄôÄô ÇK§ àêò ÇÄàêà F	 íÇ ÄôÄô Çã§ àêò ÇÄàêà Ü  •Æxí†pêíí…ê4É "#0àÄ÷" Ç( â-
+6A Ç†ˇá>Ç†pÄÇ&»,á2	¨ÿ&∏+ &ÿ\'<' (ì∆ (£Ü  (≥   %Æ6¡ <åΩ≠%ßàCú®®í Ù»	í»âôí» Ç»0ô"â2F  ®Bàí Ù»	òRÄÇAí…ô¿òêú¿F   ‡€⁄“ôªí…á+ùF  ‡∏ÿ	∫≤ŸàKô¶HÔ©R…Bò¬Åç∆2ÄâåCÅë«Äâ â¬6Å Åã…‡PÄé à¬†8≤† PRA≠ÄU %ßåYbÖ≠eßYR¡@YRÅl«Q~…9BÄUYrΩ≠ÂÚˇIb6Å å≠•ßIÇH¬®b@OD≤¬$J™•]
+hKJ`D¿õd≠ÂYßÇ	™r†e™¶wò,Ç
+r†hwò#r
+b
+ Äw`w b
+ fpv b
+K™Äfpf i3ªdã±%”ˇK±e’ˇBfJr
+  ã±•—ˇx!M
+y|˜rC	í Ç†záôk≠ã±Âœˇx!M
+zzÇC
+f óòÇ ÇC	Ü \*ßòÇ ÇCD  \
+ßò%Ç Ω≠ôQâAeﬂˇàAƒΩ
+›≠e—ˇàM
+âòQ \:ßòÇC∆ fL…Ü   fÜÇ Và˘ÃgF  MƒÇB†ˇGÄÄ$&(ˆ8DúËF   &8Ñ&H eÛ≠∆  MF  DDãDJER
+µ @§ ± %√ˇ†J R	b†ˇgΩP• e’ˇÕΩ
+›≠e«ˇHIÇ(å‚HRúD@N‡DÜ   ÑIÜ   2  6A 0Ç!‡àä"(00‡3:2(   6A ≠Ω•‘ˇ®S‹
+∏≠%˝ˇÅ£«8rÄ™0™ ©b6Å GΩ≠•ﬂˇàBXSÄU¿PáÉ]¸öàÃh¨E∆    +»ÿ˝Ì∞µ ‡ &z&äﬂ∆   %‰≠Ω≠Â¯ˇfÏˇ   *F  i-
+6¡ h2xB≤¡0£ %Ÿˇç
+åfZO©≤»˚y™∞©ì»ÿΩ
+â¡ô—˝Ì‡ à¡ò—Ïö&X,àAÃ∏≤¡≠ÂÚˇUÜÌˇ»ÿ˝ÌΩ	‡ ç
+&z&ä€(F  Y-6A (R 6A 0Ç!‡àä"(00‡3:2I   6A (b 6A à¬(bÄèâ  6A 9b 6A (Ç 6A (≤ 6a ± ¢¬ˇe„  ®!-
+   6A (¢ 6A (í 6aq e ´1£»‡¿0> 3¿¬A≤†∞0Ã pªÄ¢«8Â√ˇ¬†8 ∑≠eŒ¶≤«p≠•«ˇ=
+&Z.å:3∆	 Ç'Ãò≤«p≠•„ˇ∆ˆˇ»ÿ˝Ì≠‡ &j
+&äﬂÜÙˇ-F àW<åâB ∑92≠e…¶≠¬«pΩ%‚ˇ-
+fzS»gçΩB«8ä$ÿä'Ëù•Ça£∆Ê  !“ºí!´ó
+¢¡"⁄,”2BR1ÛæB!®Lr2a¢G¢ÅæÇa¢í!°"Ø ô32a£ía°"a•m=]÷ B!®"Øﬂ tL'óMR¡2’<b!°"CPR†x"ƒü\Ñ EÉ" f Ç!£BCQba°"†cá¢L¢!§≤»Â`´¢a¢V⁄í!¶L"0" "YFÆ "!£&>B!£-
+@#É  tå≤"«π]
+ SÉP tÏ¬ba•∆
+   Ç°êäÅ¢a•Ça¢∆
